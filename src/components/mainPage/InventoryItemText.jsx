@@ -1,16 +1,12 @@
 import React, {useState} from 'react';
-const ItemText = (props) => {
+const InventoryItemText = (props) => {
     const [content, setContent] = useState('loading');
     fetch(props.txtLink)
         .then(response => response.text())
         .then(data => {
             setContent(data);
         });
-    return (
-        <div>
-            <p>{content}</p>
-        </div>
-    );
+    return <p>{content.txtLink}</p>
 };
 
-export default ItemText;
+export default InventoryItemText;
