@@ -6,29 +6,31 @@ import Section from "./components/section/Section";
 import Inventory from "./components/mainPage/Inventory";
 import ItemPage from "./components/itemPage/ItemPage";
 import {ITEMS} from "./planes/FolderList";
-import {Form, Button} from "react-bootstrap"
 
 
 const App = () => {
     const sectionContent = {
         form:
-            <Form name="contact" method="POST" data-netlify="true" onSubmit="submit">
-                <Form.Group controlId="exampleForm.ControlInput1">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="name@example.com" />
-                </Form.Group>
-                <Form.Group controlId="exampleForm.ControlInput2">
-                    <Form.Label>Subject</Form.Label>
-                    <Form.Control type="email"/>
-                </Form.Group>
-                <Form.Group controlId="exampleForm.ControlTextarea1">
-                    <Form.Label>Message</Form.Label>
-                    <Form.Control as="textarea" rows={3} />
-                </Form.Group>
-                <Button variant="primary" type="submit">
-                    Submit
-                </Button>
-            </Form>
+            <form name="contact" method="POST" data-netlify="true">
+                <p>
+                    <label>Your Name: <input type="text" name="name" /></label>
+                </p>
+                <p>
+                    <label>Your Email: <input type="email" name="email" /></label>
+                </p>
+                <p>
+                    <label>Your Role: <select name="role[]" multiple>
+                        <option value="leader">Leader</option>
+                        <option value="follower">Follower</option>
+                    </select></label>
+                </p>
+                <p>
+                    <label>Message: <textarea name="message"/></label>
+                </p>
+                <p>
+                    <button type="submit">Send</button>
+                </p>
+            </form>
     };
     return (
         <div>
