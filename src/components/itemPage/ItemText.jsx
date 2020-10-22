@@ -9,7 +9,7 @@ const ItemText = (props) => {
         .then(data => setContent(data));
 
     return (
-        <p>
+        <p style={{wordWrap:'break-word'}}>
             {content}
         </p>
     );

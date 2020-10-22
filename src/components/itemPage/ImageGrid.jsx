@@ -1,39 +1,36 @@
 import React from 'react';
-import {Row, Col, Image} from "react-bootstrap";
+import {Row, Image} from "react-bootstrap";
 
 
 const ImageGrid = (props) => {
 
     const imageContainerStyle = {
-        padding: '5px',
-        height: '500px',
-        cursor: 'pointer'
-    };
-    const imageWrapperStyle = {
         display: 'flex',
-        justifyContent: 'center',
-        height: '100%',
-        width: '100%'
+        flexGrow:'1',
+        padding: '5px',
+        height: '100px',
+        width: '100px',
+        cursor: 'pointer'
     };
     const imageStyle = {
         minHeight: '100%',
         minWidth: '100%',
         objectFit: 'cover',
-        overflow: 'hidden'
+        overflow: 'hidden',
     };
-    return <section id='inventory'>
-            <Row>
-                {props.item.IMAGES.map((topimage, index) => (
-                    <Col xs={12} sm={6} md={4} lg={3} key={index} style={imageContainerStyle}>
-                        <div style={imageWrapperStyle}>
-                            <Image style={imageStyle}
-                                   src={topimage}
-                                   alt=""/>
-                        </div>
-                    </Col>
-                ),)}
-            </Row>
-        </section>
+    return <section id={props.id}>
+        <h2>{props.id}</h2>
+        <Row style={{margin:'0',
+            justifyContent:'flex-start'}}>
+            {props.item.IMAGES.map((topimage, index) => (
+                <div key={index} style={imageContainerStyle}>
+                    <Image style={imageStyle}
+                           src={topimage}
+                           alt=""/>
+                </div>
+            ),)}
+        </Row>
+    </section>
 };
 
 export default ImageGrid;

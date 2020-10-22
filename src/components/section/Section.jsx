@@ -1,10 +1,10 @@
 import React from 'react';
 import {Jumbotron} from "react-bootstrap";
 
-const AboutUs = (props) => {
+const Section = (props) => {
 
     return <Jumbotron id={props.id}>
-        <h3>Consistency is the key</h3>
+        <h3>{props.sectionName}</h3>
         <p>to add..</p>
         <p>to add..</p>
         <p>to add..</p>
@@ -13,4 +13,4 @@ const AboutUs = (props) => {
     </Jumbotron>
 };
 
-export default AboutUs;
+export default Section;

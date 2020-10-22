@@ -47,10 +47,10 @@ const Inventory = (props) => {
         overflow: 'hidden'
     };
 
-    return <Jumbotron id={props.id}>
+    return <Jumbotron id={props.id} onResize={itemSizeHandler} onLoad={itemSizeHandler}>
         {console.log(carouselItemHeight)}
         <h3>Inventory</h3>
-        <OwlCarousel {...carouselParams} onResize={itemSizeHandler} onLoad={itemSizeHandler}>
+        <OwlCarousel {...carouselParams} >
             {props.items.map(
                 (item, key) => (
                     <Card key={key} style={imageContainerStyle}>

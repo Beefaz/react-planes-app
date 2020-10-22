@@ -1,43 +1,17 @@
 import React from 'react';
 import ItemText from "./ItemText";
-import {Image, Row, Col, Jumbotron} from "react-bootstrap";
+import {Image, Jumbotron} from "react-bootstrap";
+import ImageGrid from "./ImageGrid";
 
 
 const ItemPage = (props) => {
-    const rowStyle = {
-        padding: '0.5rem',
-        flexWrap: 'wrap',
-        margin: '0',
-    };
-    const imageWrapperStyle = {
-        display: 'flex',
-        justifyContent: 'center',
-        cursor: 'pointer',
-        overflow: 'hidden'
-    };
 
-    const imageStyle = {
-        flexGrow: '1'
-    };
-
-    return <Jumbotron>
+    return <Jumbotron onLoad={props.onLoad}>
         <Image src={props.item.TOPIMAGE}
                alt=""
                fluid/>
-        <Jumbotron>
-            <ItemText txtLink={props.item.TEXT}/>
-            <Row style={rowStyle}>
-                {props.item.IMAGES.map((imageLink, index) => (
-                    <Col xs={6} sm={4} md={4} lg={4} key={index}>
-                        <div style={imageWrapperStyle}>
-                            <Image style={imageStyle}
-                                   src={imageLink}
-                                   alt=""/>
-                        </div>
-                    </Col>
-                ),)}
-            </Row>
-        </Jumbotron>
+        <ItemText txtLink={props.item.TEXT}/>
+        <ImageGrid item={props.item} id={'Plane gallery'}/>
     </Jumbotron>
 };
 
