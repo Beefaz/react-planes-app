@@ -12,7 +12,7 @@ import {Form, Button} from "react-bootstrap"
 const App = () => {
     const sectionContent = {
         form:
-            <Form name="contact" method="post" data-netlify onSubmit="submit">
+            <Form name="contact" method="POST" data-netlify="true" onSubmit="submit">
                 <Form.Group controlId="exampleForm.ControlInput1">
                     <Form.Label>Email address</Form.Label>
                     <Form.Control type="email" placeholder="name@example.com" />
