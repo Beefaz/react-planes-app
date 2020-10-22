@@ -6,27 +6,10 @@ import Section from "./components/section/Section";
 import Inventory from "./components/mainPage/Inventory";
 import ItemPage from "./components/itemPage/ItemPage";
 import {ITEMS} from "./planes/FolderList";
+import SectionContent from "./components/contactForm/ContactForm";
 
 
 const App = () => {
-    const sectionContent = {
-        form:
-            <form name="contact" method="POST" data-netlify="true">
-                <input type="hidden" name="form-name" value="contact-form"/>
-                <p>
-                    <label>Your Name: <input type="text" name="name" /></label>
-                </p>
-                <p>
-                    <label>Your Email: <input type="email" name="email" /></label>
-                </p>
-                <p>
-                    <label>Message: <textarea name="message"/></label>
-                </p>
-                <p>
-                    <button type="submit">Send</button>
-                </p>
-            </form>
-    };
     return (
         <div>
             <Router>
@@ -54,7 +37,7 @@ const App = () => {
                         <div>ERROR</div>
                     </Route>
                 </Switch>
-                <Section sectionName={'Contact us'} id='contacts' sectionContent={sectionContent.form}/>
+                <Section sectionName={'Contact us'} id='contacts' sectionContent={SectionContent.form}/>
             </Router>
         </div>
     );
