@@ -10,7 +10,7 @@ const ItemText = (props) => {
 
     return (
         <p>
-            {content.concat('...')}
+            {content}
         </p>
     );
 };

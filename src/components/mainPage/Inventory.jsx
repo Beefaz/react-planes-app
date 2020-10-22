@@ -1,14 +1,24 @@
-import React from 'react';
-import {Card, Button, Jumbotron} from "react-bootstrap";
-import {ITEMS} from "../../planes/FolderList";
+import React, {useState} from 'react';
+import {Image, Card, Button, Jumbotron} from "react-bootstrap";
+import {Link} from "react-router-dom";
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const Inventory = (props) => {
-const carouselParams = {
-    items: 6,
-    margin:10,
+    const requiredCarouselItemWidth = 300;
+    const [carouselItemCount, setCarouselItemCount] = useState(1);
+    const [carouselItemHeight, setCarouselItemHeight] = useState('300px');
+
+    const itemSizeHandler = () =>{
+        setCarouselItemCount(Math.ceil( window.innerWidth/requiredCarouselItemWidth));
+        setCarouselItemHeight((window.innerHeight/window.innerHeight*requiredCarouselItemWidth).toString().concat('px'));
+    };
+
+
+    const carouselParams = {
+    items: carouselItemCount,
+    margin: 10,
     loop: true,
     dots: false,
     slide: 'page',
@@ -17,21 +27,43 @@ const carouselParams = {
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
 };
+
+    const imageContainerStyle = {
+        height: carouselItemHeight,
+        display:'flex',
+        overflow:'hidden',
+        borderRadius:'25px'
+    };
+    const imageWrapperStyle = {
+        display: 'flex',
+        justifyContent: 'center',
+        height: '100%',
+        width: '100%'
+    };
+    const imageStyle = {
+        minHeight: '100%',
+        minWidth: '100%',
+        objectFit: 'cover',
+        overflow: 'hidden'
+    };
+
     return <Jumbotron id={props.id}>
+        {console.log(carouselItemHeight)}
         <h3>Inventory</h3>
-        <OwlCarousel {...carouselParams}>
-            {ITEMS.map(
+        <OwlCarousel {...carouselParams} onResize={itemSizeHandler} onLoad={itemSizeHandler}>
+            {props.items.map(
                 (item, key) => (
-                    <Card key={key}>
-                        <Card.Img
-                            className="d-block w-100"
+                    <Card key={key} style={imageContainerStyle}>
+                        <div style={imageWrapperStyle}>
+                            <Image
+                            style={imageStyle}
                             variant="top"
                             src={item.TOPIMAGE}
-                            alt="First slide"
-                        />
-                        <Card.Title>{item.NAME}</Card.Title>
-                        <Card.Text>{item.TEXT}</Card.Text>
-                        <Button variant="primary">View plane</Button>
+                            alt="First slide"/>
+                        </div>
+                        <Button variant="primary" as={Link}
+                                to={"/item/"+item.NAME.replace(/\s/g, "")}
+                        >{item.NAME}</Button>
                     </Card>
                 ),
             )}
