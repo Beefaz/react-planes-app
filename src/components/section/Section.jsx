@@ -5,11 +5,7 @@ const Section = (props) => {
 
     return <Jumbotron id={props.id}>
         <h3>{props.sectionName}</h3>
-        <p>to add..</p>
-        <p>to add..</p>
-        <p>to add..</p>
-        <p>to add..</p>
-        <p>to add..</p>
+        {props.sectionContent}
     </Jumbotron>
 };
 

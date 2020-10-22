@@ -6,8 +6,30 @@ import Section from "./components/section/Section";
 import Inventory from "./components/mainPage/Inventory";
 import ItemPage from "./components/itemPage/ItemPage";
 import {ITEMS} from "./planes/FolderList";
+import {Form, Button} from "react-bootstrap"
+
 
 const App = () => {
+    const sectionContent = {
+        form:
+            <Form name="contact" method="post" data-netlify onSubmit="submit">
+                <Form.Group controlId="exampleForm.ControlInput1">
+                    <Form.Label>Email address</Form.Label>
+                    <Form.Control type="email" placeholder="name@example.com" />
+                </Form.Group>
+                <Form.Group controlId="exampleForm.ControlInput2">
+                    <Form.Label>Subject</Form.Label>
+                    <Form.Control type="email"/>
+                </Form.Group>
+                <Form.Group controlId="exampleForm.ControlTextarea1">
+                    <Form.Label>Message</Form.Label>
+                    <Form.Control as="textarea" rows={3} />
+                </Form.Group>
+                <Button variant="primary" type="submit">
+                    Submit
+                </Button>
+            </Form>
+    };
     return (
         <div>
             <Router>
@@ -24,7 +46,9 @@ const App = () => {
                     {ITEMS.map((item, index) => (
                         <Route exact path={"/item/" + item.NAME.replace(/\s/g, "")}
                                key={index}>
-                            <ItemPage item={item} onLoad={()=>{window.scrollTo({top: 0, behavior:'auto'})}}/>
+                            <ItemPage item={item} onLoad={() => {
+                                window.scrollTo({top: 0, behavior: 'auto'})
+                            }}/>
                         </Route>
                     ),)}
                     <Route exact path='/#services'>
@@ -33,7 +57,7 @@ const App = () => {
                         <div>ERROR</div>
                     </Route>
                 </Switch>
-                <Section sectionName={'Contact us'} id='contacts'/>
+                <Section sectionName={'Contact us'} id='contacts' sectionContent={sectionContent.form}/>
             </Router>
         </div>
     );

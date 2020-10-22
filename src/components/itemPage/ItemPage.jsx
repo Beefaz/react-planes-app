@@ -5,7 +5,6 @@ import ImageGrid from "./ImageGrid";
 
 
 const ItemPage = (props) => {
-
     return <Jumbotron onLoad={props.onLoad}>
         <Image src={props.item.TOPIMAGE}
                alt=""
