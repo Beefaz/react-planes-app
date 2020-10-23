@@ -9,7 +9,9 @@ const ItemText = (props) => {
         .then(data => setContent(data));
 
     return (
+
         <p style={{wordWrap:'break-word'}}>
+            {console.table(props.txtLink)}
             {content}
         </p>
     );

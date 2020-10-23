@@ -3,14 +3,17 @@ import {Row, Image} from "react-bootstrap";
 
 
 const ImageGrid = (props) => {
-
+    const rowStyle = {
+        margin: '0',
+        justifyContent: 'flex-start',
+    };
     const imageContainerStyle = {
         display: 'flex',
-        flexGrow:'1',
+        flexGrow: '1',
         padding: '5px',
         height: '100px',
         width: '100px',
-        cursor: 'pointer'
+        cursor: 'pointer',
     };
     const imageStyle = {
         minHeight: '100%',
@@ -20,8 +23,7 @@ const ImageGrid = (props) => {
     };
     return <section id={props.id}>
         <h2>{props.id}</h2>
-        <Row style={{margin:'0',
-            justifyContent:'flex-start'}}>
+        <Row style={rowStyle}>
             {props.item.IMAGES.map((topimage, index) => (
                 <div key={index} style={imageContainerStyle}>
                     <Image style={imageStyle}
