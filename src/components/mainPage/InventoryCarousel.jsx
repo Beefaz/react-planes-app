@@ -6,15 +6,11 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const InventoryCarousel = (props) => {
-    const requiredCarouselItemSize = 300;
     const [carouselItemCount, setCarouselItemCount] = useState(1);
-    const [carouselItemHeight, setCarouselItemHeight] = useState(requiredCarouselItemSize);
 
     const itemSizeHandler = () =>{
-        setCarouselItemCount(Math.ceil( window.innerWidth/requiredCarouselItemSize));
-        setCarouselItemHeight(window.innerWidth/window.innerHeight*requiredCarouselItemSize);
+        setCarouselItemCount(Math.ceil( window.innerWidth/props.cardSize));
     };
-
     const carouselParams = {
         items: carouselItemCount,
         margin: 10,
@@ -26,9 +22,8 @@ const InventoryCarousel = (props) => {
         autoplayTimeout: 2500,
         autoplayHoverPause: true,
     };
-
     const imageContainerStyle = {
-        height: carouselItemHeight.toString().concat('px'),
+        height: '300px',
         display:'flex',
         overflow:'hidden',
         borderRadius:'25px',
@@ -64,8 +59,8 @@ const InventoryCarousel = (props) => {
         <h3>Inventory</h3>
         <OwlCarousel {...carouselParams} onChange={itemSizeHandler}>
             {props.items.map(
-                (item, key) => (
-                    <Card key={key}
+                (item, index) => (
+                    <Card key={'card'.concat(index.toString())}
                           style={imageContainerStyle}
                           as={Link}
                           to={"/item/"+item.NAME.replace(/\s/g, "")}>

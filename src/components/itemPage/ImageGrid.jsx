@@ -25,7 +25,7 @@ const ImageGrid = (props) => {
         <h2>{props.id}</h2>
         <Row style={rowStyle}>
             {props.item.IMAGES.map((topimage, index) => (
-                <div key={index} style={imageContainerStyle}>
+                <div key={'topImage'.concat(index.toString())} style={imageContainerStyle}>
                     <Image style={imageStyle}
                            src={topimage}
                            alt=""/>

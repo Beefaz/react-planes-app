@@ -6,11 +6,11 @@ libraries: npm react-bootstrap, npm react-owl carousel
 
 states, hooks, jsx
 
-item content loaded by https://github.com/Beefaz/react-planes-app/blob/master/src/planes/FolderList.jsx
+item content loaded by https://github.com/Beefaz/react-planes-app/blob/master/src/planes/DATA.jsx
 
 to add new item, add item folder, top img folder, otherimg folder, txt files you wish to be displayed
 
-extend object in FolderList.jsx with same style as included, but change the folder names.
+extend object in DATA.jsx with same style as included, but change the folder names.
 
 paragraphs are created from item .txt files, images - from topimg and otherimg folders for each according item folder.
 
