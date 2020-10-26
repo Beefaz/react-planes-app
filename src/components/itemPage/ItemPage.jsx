@@ -25,7 +25,8 @@ const ItemPage = (props) => {
         }, lineText))
     };
 
-    return <Jumbotron onLoad={props.onLoad}>
+    return <Jumbotron>
+        <h1>{props.item.NAME}</h1>
         <Image src={props.item.TOPIMAGE}
                alt=""
                fluid/>

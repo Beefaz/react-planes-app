@@ -22,7 +22,7 @@ const ImageGrid = (props) => {
         overflow: 'hidden',
     };
     return <section id={props.id}>
-        <h2>{props.id}</h2>
+        <h4>{props.id}</h4>
         <Row style={rowStyle}>
             {props.item.IMAGES.map((topimage, index) => (
                 <div key={'topImage'.concat(index.toString())} style={imageContainerStyle}>

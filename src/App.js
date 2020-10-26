@@ -21,14 +21,15 @@ const App = () => {
                         <Section sectionName={'About us'} id='aboutUs'/>
                         <Section sectionName={'Adventure Flights'} id='adventureFlights'/>
                         <Section sectionName={'Services'} id='services'/>
-                        <InventoryCarousel id='inventory' items={ITEMS} cardSize={300}/>
+                        <InventoryCarousel id='inventory'
+                                           items={ITEMS}
+                                           cardSize={300}
+                        />
                     </Route>
                     {ITEMS.map((item, index) => (
                         <Route exact path={"/item/" + item.NAME.replace(/\s/g, "")}
                                key={'route'.concat(index.toString())}>
-                            <ItemPage item={item} onLoad={() => {
-                                window.scrollTo({top: 0, behavior: 'auto'})
-                            }}/>
+                            <ItemPage item={item}/>
                         </Route>
                     ),)}
                     <Route exact path='/#services'>

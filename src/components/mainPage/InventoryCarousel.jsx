@@ -8,9 +8,10 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 const InventoryCarousel = (props) => {
     const [carouselItemCount, setCarouselItemCount] = useState(1);
 
-    const itemSizeHandler = () =>{
-        setCarouselItemCount(Math.ceil( window.innerWidth/props.cardSize));
+    const itemSizeHandler = () => {
+        setCarouselItemCount(Math.ceil(window.innerWidth / props.cardSize));
     };
+
     const carouselParams = {
         items: carouselItemCount,
         margin: 10,
@@ -24,10 +25,10 @@ const InventoryCarousel = (props) => {
     };
     const imageContainerStyle = {
         height: '300px',
-        display:'flex',
-        overflow:'hidden',
-        borderRadius:'25px',
-        textDecoration:'none',
+        display: 'flex',
+        overflow: 'hidden',
+        borderRadius: '25px',
+        textDecoration: 'none',
         whiteSpace: 'nowrap',
         backgroundColor: 'rgba(0, 0, 0, 0.5)',
     };
@@ -44,18 +45,18 @@ const InventoryCarousel = (props) => {
         overflow: 'hidden'
     };
     const cardLabelStyle = {
-        marginTop:'12px',
-        color:'white',
+        marginTop: '12px',
+        color: 'white',
         verticalAlign: 'center',
         marginLeft: '10px',
         marginRight: '10px',
         whiteSpace: 'nowrap',
         overflow: 'hidden',
-        textOverflow:'ellipsis',
+        textOverflow: 'ellipsis',
         textAlign: 'center'
     };
 
-    return <Jumbotron id={props.id} >
+    return <Jumbotron id={props.id}>
         <h3>Inventory</h3>
         <OwlCarousel {...carouselParams} onChange={itemSizeHandler}>
             {props.items.map(
@@ -63,7 +64,10 @@ const InventoryCarousel = (props) => {
                     <Card key={'card'.concat(index.toString())}
                           style={imageContainerStyle}
                           as={Link}
-                          to={"/item/"+item.NAME.replace(/\s/g, "")}>
+                          to={"/item/" + item.NAME.replace(/\s/g, "")}
+                          onClick={() => {
+                              window.scrollTo({top: 0, behavior: 'auto'})
+                          }}>
                         <div style={imageWrapperStyle} ref={React.createRef()}>
                             <Image
                                 style={imageStyle}

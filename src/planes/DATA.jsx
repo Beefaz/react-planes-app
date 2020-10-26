@@ -344,9 +344,9 @@ export const ITEMS = [
         },
     },
     {
-        NAME: 'BAC Strikemaster - 3 available',
-        TOPIMAGE: importAll(require.context('../planes/BAC Strikemaster - 3 available/TopIMG', false, /\.(png|jpe?g|svg|webp)$/)),
-        IMAGES: importAll(require.context('../planes/BAC Strikemaster - 3 available/OtherIMG', false, /\.(png|jpe?g|svg|webp)$/)),
+        NAME: 'BAC Strikemaster',
+        TOPIMAGE: importAll(require.context('../planes/BAC Strikemaster/TopIMG', false, /\.(png|jpe?g|svg|webp)$/)),
+        IMAGES: importAll(require.context('../planes/BAC Strikemaster/OtherIMG', false, /\.(png|jpe?g|svg|webp)$/)),
         CONTENT: {
             Status:'BAC STRIKEMASTER FOR SALE -  2 x MK 88\'s Plus spare engine with logbook,ground equipment and spares for only £130,000 Sterling !\n' +
                 '\n' +
@@ -434,6 +434,559 @@ export const ITEMS = [
                 'The aircraft commenced service on 3.5.55 and was taken on charge Royal Navy Fleet Air Arm as Sea Devon C.20 XJ324. The aircraft was operated by RNFAA 781 Squadron based at Lee-on-Solent, Hants and was fitted with an upholstered interior as an “Admirals Barge”.\n' +
                 '​\n' +
                 'In 1990, the Devon was retired by Royal Navy and listed for civil disposal and sold to a UK aircraft dealer. In 1990 the aircraft XJ324 was sold and arrived in Melbourne Victoria and on 1st of Jan 1990  and arrived dismantled on a truck at Essendon Airport, Melbourne where it was re assembled. Now titled a Dove on 28.12.90 the aircraft was added to the Australian Civil Register as Dove 5 VH-DHI. Restored and flown again in 2014 and retaining her admirals Barge scheme.',
+        },
+    },
+    {
+        NAME: 'Hawker Hunter GA 11',
+        TOPIMAGE: importAll(require.context('../planes/Hawker Hunter GA 11/TopIMG', false, /\.(png|jpe?g|svg|webp)$/)),
+        IMAGES: importAll(require.context('../planes/Hawker Hunter GA 11/OtherIMG', false, /\.(png|jpe?g|svg|webp)$/)),
+        CONTENT: {
+            Status: 'Hawker Hunter GA 11 For Sale (No Engine)\n' +
+                'Shipping can be arranged to anywhere in the world. \n' +
+                'Our team can pack and ship it for you at a cost.\n' +
+                'Price - $30,000 US',
+            Aircraft_information: 'Hawker Hunter GA.11 ex Royal Navy team \'Rough Diamonds\' \n' +
+                'Serial No HABL - 003062\n' +
+                'This Hunter only has 3325 airframe hrs in its logbook.\n' +
+                'The cockpit is complete and the fuselage and wings are disassembled and in storage in the USA (Please note that this is being sold without engine). An engine could be acquired from certain suppliers in the USA on request and subject to separate agreement. \n' +
+                'Airframe logbooks are available.',
+        },
+    },
+    {
+        NAME: 'Stinson L-5 Sentinel',
+        TOPIMAGE: importAll(require.context('../planes/Stinson L-5 Sentinel/TopIMG', false, /\.(png|jpe?g|svg|webp)$/)),
+        IMAGES: importAll(require.context('../planes/Stinson L-5 Sentinel/OtherIMG', false, /\.(png|jpe?g|svg|webp)$/)),
+        CONTENT: {
+            Status:'Stinson L5 Sentinel 1944 Model \n' +
+                'Asking Price Euros 89,000\n' +
+                '​c/n: 76-1348\n' +
+                'Military serial number 42-99107\n' +
+                'Registration     F-AYLV\n' +
+                '\n' +
+                'An excellent opportunity to own and operate a stunning example of  a recently restored L-Bird ! This is a very authentic and accurate restoration and shown in 10:10 condition. All paperwork available. ',
+            History: 'The the L-5, affectionately known as the "Flying Jeep", can be traced to the prewar civilian Stinson HW-75. The 75 horsepower civilian high-wing design was built by the Stinson Aircraft Company at Wayne, Michigan and first flew in 1939. \n' +
+                '\n' +
+                'The L5 was accepted by the military after accelerated service trials and entered into service in December 1942 as the Army     O-62 (\'O\' for observation). The L-5 carried a pilot and observer in a tandem-seating configuration, which was preferred by the military for observation work.\n' +
+                '\n' +
+                'In March 1943, with the creation of the liaison category of light observation aircraft (previous examples came from Taylorcraft Aircraft as the L-2, and from Aeronca as their L-3, along with the numerous Piper L-4) the designation for Stinson\'s new purpose-built military design was changed to the L-5. The primary purpose as a liaison aircraft was courier and communication work, artillery spotting and casualty evacuation. The fuselage of later models was redesigned so the aircraft could also be used as an air ambulance, or for cargo work. With a wider and deeper rear fuselage section and a large rear door that folded downward, a litter patient or 250 pounds of cargo could be quickly loaded aboard.\n' +
+                '\n' +
+                'The L-5 series was manufactured between December 1942 and September 1945, during which time 3,590 of the unarmed two-seaters were built for the United States armed forces, making it the second most widely used light observation aircraft of the war behind the Piper L-4 Cub. \n' +
+                '\n' +
+                'The L-5 was also popular with Generals and other high-ranking officers for fast, efficient short-range transportation.\n' +
+                '\n' +
+                'During the Battle of Okinawa, L-5s operated from an LST using the Brodie landing system which allowed a light aircraft to take off and land without a flat surface by snagging a wire hung between two booms.\n' +
+                '\n' +
+                '​Capable of operating from short unimproved airstrips, the L-5 "Sentinel" delivered personnel, critical intelligence and needed supplies to the front line troops. On return flights, wounded soldiers were often evacuated to rear area field hospitals for medical treatment, boosting the morale of combat troops fighting in remote areas. L-5s were also used for aerial photography, controlling vehicle convoys, para-dropping food, medical supplies and ammunition, laying communication wire, distributing propaganda leaflets, spraying pesticide, transporting prisoners, and directing fighter-bombers to ground targets. \n' +
+                '\n' +
+                'This Stinson L5  was manufactured on 21/03/1944 New York, USA -Departs to England\n' +
+                '05/04/1944 - England - Arrives in England and is assigned to Soxo and into service in Normandy & Belgium. \n' +
+                '16/01/1952 - Italy - Incorporated in the Aeronautica Militare Italiana (Italian Air Force) as  MM52970\n' +
+                '28/04/1955 - Italy - Leaves the italian army and becomes I-AEFZ. Used for towing gliders.\n' +
+                '20/08/2013 - Italy  - I-BRLU (Called after XX-RLU was the first plane ever Italo Battioli flew). Full Zero Timed Restoration\n' +
+                '17/07/2014 - France F-AYLV',
+            Aircraft_information: 'Total Time: 3623:05   \n' +
+                'Total Time since full restoration: 193:25\n' +
+                'Total Engine Time: 1358:55\n' +
+                'Total Engine Time since overhaul: 180:55\n' +
+                'Transponder: Mode S\n' +
+                '\n' +
+                'A full list of avionics and equipment can be supplied on application. \n' +
+                '\n' +
+                'A set of new covers for the plexi glass provided. \n' +
+                '\n' +
+                'Crew: two (pilot and observer)\n' +
+                'Length: 24 ft 1 in (7.34m)\n' +
+                'Wingspan: 34ft 0 in (10.36m)\n' +
+                'Height: 7 ft 11 in (2.41m)\n' +
+                'Wing area: 155 ft² (14.40m²)\n' +
+                'Empty weight: 1550 lb (702 kg)\n' +
+                'Useful load: lb (kg)\n' +
+                'Loaded weight: 2020 lb (916 kg)\n' +
+                'Max. takeoff weight: 2050 lb (929 kg)\n' +
+                'Powerplant: 1 × Lycoming O-435-1, 185hp (138kW)\n' +
+                'Performance\n' +
+                '\n' +
+                'Never exceed speed: 145 knots (163 mph (262 km/h)(200 mph (322 km/h military, in dive))\n' +
+                'Stall speed: 38 knots (42 mph, 70 km/h)\n' +
+                'Range: 375 sm (603 km)\n' +
+                'Service ceiling: 15,800 ft (4,815.6m)\n' +
+                'Rate of climb: 900 ft/min@sea level (4.6 m/s)\n' +
+                '\n' +
+                'Armament\n' +
+                'None (technically). Some aircraft had jury rigged, anti-tank rocket launchers (mainly bazookas) installed and used with success against ground targets in WWII.',
+        },
+    },
+    {
+        NAME: 'Mikoyan-Gurevich MiG-3',
+        TOPIMAGE: importAll(require.context('../planes/Mikoyan-Gurevich MiG-3/TopIMG', false, /\.(png|jpe?g|svg|webp)$/)),
+        IMAGES: importAll(require.context('../planes/Mikoyan-Gurevich MiG-3/OtherIMG', false, /\.(png|jpe?g|svg|webp)$/)),
+        CONTENT: {
+            History: 'The Mikoyan-Gurevich MiG-3 (Russian: Микоян и Гуревич МиГ-3) was a Soviet fighter and interceptor aircraft used during World War II.\n' +
+                '\n' +
+                'It was a development of the MiG-1 by the OKO (opytno-konstruktorskij otdel — Experimental Design Department) of Zavod (Factory) No. 1 to remedy problems found during the MiG-1\'s development and operations. It replaced the MiG-1 on the production line at Factory No. 1 on 20 December 1940 and was built in large numbers during 1941 before Factory No. 1 was converted to build the Ilyushin Il-2.\n' +
+                '\n' +
+                '​On 22 June 1941, at the beginning of Operation Barbarossa, some 981 were in service with the Soviet Air Forces (VVS), the Soviet Air Defence Forces (PVO) and Soviet Naval Aviation.\n' +
+                '\n' +
+                ' The aircraft had been designed for high-altitude combat but combat over the Eastern Front was generally at lower altitudes, where it was inferior to the German Messerschmitt Bf 109, as well as most of its Soviet contemporaries. It was also pressed into service as a fighter-bomber during the autumn of 1941 but it was equally unsuited for this. Over time, the survivors were concentrated in the PVO, where its disadvantages mattered less, the last being withdrawn from service before the end of the war.',
+            Aircraft_information: 'This unique airframe comprises 50% original aircraft, with parts from 5 recovered aircraft and restored in 2005 by the Aircraft Restoration Department of Rusavia Ltd.\n' +
+                'The airframe and its systems are in a technically sound state and ready for a flight.\n' +
+                'Retraction of landing gear has been tested and in full working condition.\n' +
+                'The cockpit is fitted with all the necessary instruments in airworthy condition.\n' +
+                'Exterior condition is very good, the aircraft has always been stored in a hangar.\n' +
+                'Dimensions (wing span / length / height) – 10.2m /8.2m /2.6 m.\n' +
+                'Empty weight – 2,400 kg.\n' +
+                'The engine supplied is an original AM 38 engine which has been test run and flown but is problematic but will be supplied.\n' +
+                'It is recommended that an Allison V12 be fitted for operations. ',
+        },
+    },
+    {
+        NAME: 'de Havilland DH115 Vampire T Mk.11 WZ507',
+        TOPIMAGE: importAll(require.context('../planes/de Havilland DH115 Vampire T Mk.11 WZ507/TopIMG', false, /\.(png|jpe?g|svg|webp)$/)),
+        IMAGES: importAll(require.context('../planes/de Havilland DH115 Vampire T Mk.11 WZ507/OtherIMG', false, /\.(png|jpe?g|svg|webp)$/)),
+        CONTENT: {
+            Status: 'Mark: G-VTII\n' +
+                'Year Built: 1952\n' +
+                'Previous ID: WZ507\n' +
+                'Total Hours: 1373.40\n' +
+                'Cockpit tour:  - \n' +
+                'Guide Price £100k  - \n' +
+                'The Vampire Preservation Group has successfully operated this 1952 de Havilland Vampire T11 for over a decade, maintaining it in pristine condition and delighting millions of spectators at air displays across the UK and Europe. They are very proud of their achievements but have now sadly decided the time has come to sell this unique aircraft.',
+            Aircraft_information: 'This Vampire was built in 1952 at Christchurch, Dorset (c/n 15127) and is believed to be the ONLY airworthy de Havilland Vampire T11 in the world. Other airworthy two seat variants are still flying but these tend to be ex-Swiss Vampire T55\'s. This Vampire is a genuine ex-RAF Vampire T11, making it a very rare aircraft indeed.\n' +
+                '\n' +
+                'This aircraft had its annual inspection earlier this year and has a "Permit to Fly", valid until May 2017.\n' +
+                '\n' +
+                'The aircraft is fully airworthy, capable of aerobatics and has been regularly displayed on the air show circuit by the current owners since 2002.\n' +
+                '\n' +
+                'The CAA registration for this aircraft is G-VTII but we have CAA permission to use the original military registration of WZ507 instead. This enables us to display our Vampire in authentic RAF colours.\n' +
+                '\n' +
+                'This aircraft served in the RAF from 1953 to 1969.\n' +
+                '\n' +
+                'In 2008 the aircraft\'s paint was stripped back to bare metal (and wood!), the airframe treated to prevent corrosion and then repainted, which has helped preserve the aircraft in A1 condition.\n' +
+                '\n' +
+                'In 2011 we replaced the existing Goblin engine with another example, which had only logged around 100 hours flying time. The new engine was completely stripped down, inspected and rebuilt before installation, which has extended the life of our aircraft enormously.\n' +
+                '\n' +
+                'Airframe hours: 1373:40 (as of 1st May 2016)\n' +
+                '\n' +
+                'Engine hours: 121:50 (as of 1st May 2016)\n' +
+                '\n' +
+                'The Goblin engine which was replaced in 2011 is also included in this sale and can be used as a useful source of spares. We are also including a modest selection of other spare parts we have collected over the years and can supply a full inventory to anybody seriously considering buying this aircraft.',
+            History: '1952 - Manufactured by the de Havilland Aircraft Company at Christchurch, Dorset. \n' +
+                '\n' +
+                '1953 - Delivered to RAF in March. \n' +
+                '\n' +
+                '1954 - Posted to 229 Operation Conversion Unit (OCU), Chivenor \n' +
+                '\n' +
+                '1955 - Flown to Marshall’s at Cambridge for modifications (fitting of new ‘bubble’ canopy and ejection seats)  \n' +
+                '\n' +
+                '1959 - Posted to 8 Flight Training School (FTS), Swinderby \n' +
+                '\n' +
+                '1961 - Posted to 5 FTS, Oakington \n' +
+                '\n' +
+                '1963 - Posted to 3 / 4 Civil Anti-Aircraft Co-operation Unit (CAACU), Exeter  \n' +
+                '\n' +
+                '1964 - Posted to Central Air Traffic Control School (CATCS), Shawbury \n' +
+                '\n' +
+                '1969 - Retired from RAF service and put on static display by the Solway Aviation Society (SAS), based at Carlisle airport. \n' +
+                '\n' +
+                '1980 - WZ507 became the first ex-RAF jet fighter to be put onto the UK civilian register (as G-VTII), after being restored to full flying condition by the SAS.  \n' +
+                '\n' +
+                '1982 - Appeared in the BBC production ‘The Aerodrome’ \n' +
+                '\n' +
+                '1985 - Ownership transferred to the Vintage Aircraft Team at Cranfield \n' +
+                '\n' +
+                '2002 - After a period of storage and restoration, WZ507 was returned to flying condition by de Havilland Aviation at Swansea.  \n' +
+                '\n' +
+                '2005 - Vampire Preservation Group formed to operate WZ507 and preserve it as an airworthy aircraft. \n' +
+                '\n' +
+                '2008 - WZ507 Undergoes major respray.  \n' +
+                '\n' +
+                '2011 - New Engine fitted to WZ507.',
+            FAQ: '-Why are the Vampire Preservation Group selling the aircraft?\n' +
+                'Recently WZ507 has been quieter on the air show circuit than the current owners would have liked. This is because their display pilots (who are also the main co-owners of WZ507) have not had sufficient time to keep current with display flying due to family and work commitments. This situation is not going to improve in the near future - they simply do not have the time to safely practice for flying displays with this aircraft at public events.\n' +
+                '\n' +
+                '-Is the aircraft ready to fly?\n' +
+                'Yes. WZ507 has just completed its annual maintenance inspection and is fully serviceable and in great condition. It has been regularly maintained since its return to flight in 2002 and has flown frequently. All logbooks and maintenance records are available and included in this sale.\n' +
+                '\n' +
+                '-Is the Vampire difficult to operate?\n' +
+                'This aircraft currently operates in the UK on a CAA "Permit to Fly", which is renewed annually. A new Permit to Fly is included in this sale. A CAA approved Operations Control Manual (OCM) is also required for UK operations, based upon CAP 632. UK display flying regulations are covered in CAP 403. There is CAA approval to operate without live ejection seats.\n' +
+                'Please note, if sold abroad, other national regulations may apply.\n' +
+                '\n' +
+                '-Can anybody buy and fly this aircraft?\n' +
+                'Anybody may purchase this aircraft!\n' +
+                'To fly as pilot-in-command you obviously need a pilot licence, successful completion of a short conversion course and an endorsment from the CAA for UK operations. This aircraft was designed to train pilots and is consequently very straight-forward to fly.',
+        },
+    },
+    {
+        NAME: 'Beech Model 18 G-BKGM',
+        TOPIMAGE: importAll(require.context('../planes/Beech Model 18 G-BKGM/TopIMG', false, /\.(png|jpe?g|svg|webp)$/)),
+        IMAGES: importAll(require.context('../planes/Beech Model 18 G-BKGM/OtherIMG', false, /\.(png|jpe?g|svg|webp)$/)),
+        CONTENT: {
+            History: 'Taken on strength with the Royal Canadian Air Force on the 29th September 1952 at No 6 Repair depot at RCAF Station, Trenton, Ontario. To Training Command on the 29th September 1952 for use at RCAF Station Saskatoon, Saskatchewan. To RCAF Station Bagotville, PQ on the 8th December 1955. To No 3 (AW) Operation Training Unit at RCAF Station Cold Lake, Alberta on 27th June 1957. To 442 Squadron (Auxiliary) RCAF Station Sea Island, BC on 22 July 1958. To Bristol Aircraft Winnepg for overhaul, to Air Defence Command on 20 August 1958 when completed. Used by No. 104 (Comm) Flight at RCAF St Hubert,PQ. Reserved for museum at Rockcliffe on 19 November 1964 but still in use as a training aircraft on 11 January 1965. To storage on 5th March 1965 at Saskatoon. Pending disposal there form the 10th May 1965. Sold to Bradley Air Services of Carp, Ontario and to civil register as CF-SUQ. In 1976 it was registered to Capitol Air Surveys of Ottawa. This reg cancelled on 13 July 1982 and removed from the register. To the US register on the 19th June 1984 as N5063N. Registration cancelled on 20 August 1993 and exported to the UK. \n' +
+                '\n' +
+                'This stunning aircraft has just completed and epic journey across the Atlantic to tour the USA and Central Americas. The recent pilots reports are that she never missed a beat and performed better than expected. The aircraft is currently in store at it\'s new base in Warwickshire, UK and viewing by arrangement.',
+            Aircraft_information: 'Airframe: 11342.6  hrs since 1952 construction. All major mods incorporated (spar-strap etc)\n' +
+                'Engines: L/H complete replacement zero-hour unit from Covingtons has 90hrs as of now. R/H was replaced similarly by previous owner about 10 yrs ago and now has 390 hrs on it.\n' +
+                'Props: shop overhauled for last CofA in March 2017. They have a three-year shop-visit requirement.\n' +
+                'All work done by RGV Staverton.\n' +
+                'Current CofA inspection with fresh Annual & NARC and insurance until March 2020 .\n' +
+                'This Beech 18 has just completed an epic journey around the USA & Central America and there was not a single technical unserviceability, or delay The final stats for \'actuals\' on the trip:\n' +
+                'Hours flown: 38\n' +
+                'Consumption:\n' +
+                'Fuel (AVGAS 100LL) : 40 Imp/hr on average\n' +
+                'Oil (100 straight )  : over whole trip 20 Ltrs TOTAL! So less than 1 lit/hour both engines. Both the pilots say this is amazing!\n' +
+                'Range on standard (5) tanks is about 5-6 hours @145-150kt TAS. We made it westbound to the USA in 2017 with about 4 stops comfortably. No ferry kit required',
+            Inventory_of_extras:'4 x beefy chocks\n' +
+                'Hand pump for refuelling from drums\n' +
+                'a new tailwheel tyre, a new mainwheel one (in store in UK) and much newer (than the 3 x DC) single Bose & Sennheiser headsets\n' +
+                'A \'tow-bracket\' for ground-handling (in UK)\n' +
+                'Canvas Engine and Canopy covers. Nylon Wheel/tyre covers',
+            Summary: 'The aircraft is presently fully airworthy and is insured (with Haywards). It has paperwork until annual (June) and ARC renewal (August). Insurance would need to be transferred/re-negotiated prior to sale.\n' +
+                'The only known long-term unserviceability is the ILS (u/s throughout current ownership) and the (two) Narco radios are adequate and function.\n' +
+                'The aircraft has \'bolt-on\' Garmin Aera and a Dynon D2, with plumbed-in electrics/aerial and Funkwerk TXPDR (mode S) also \'bolted on and can be utilised for Ferry flight but to be retained by the current owner post delivery. No HF.\n' +
+                'The interior trim is original RCAF fit and so needs some TLC. A 2017-made RFD 4-6 man liferaft and PLB (both new) are on board.\n' +
+                'There is a comprehensive approved line-service spares-pack provided by RGV on board, plus a quantity of unused non-synthetic (non-W) oil.\n' +
+                'Current configuration at present. which has only three pax seats in order to carry a small hot air balloon on board. All seats (inc pilot squabs) were professionally re-upholstered  & restored in blue leather last year Four strong-points (two on fwd bulkhead and two on rear) were installed by RGV for load restraint.\n' +
+                'A store of spares of varying quality are in the UK (including a full spare set of fuel tanks and two main u/c legs), though not \'signed off\'. Two wooden folding tables for installation between pax seats are stored in UK as is the fourth cabin seat which was removed to create space for the balloon.     \n' +
+                'All documents/records are available in UK and can be independently confirmed by Stuart Vincent of RGV, Staverton.',
+        },
+    },
+
+    {
+        NAME: 'Douglas C-47C',
+        TOPIMAGE: importAll(require.context('../planes/Douglas C-47C/TopIMG', false, /\.(png|jpe?g|svg|webp)$/)),
+        IMAGES: importAll(require.context('../planes/Douglas C-47C/OtherIMG', false, /\.(png|jpe?g|svg|webp)$/)),
+        CONTENT: {
+            Aircraft_information: 'Features dual control and flight panel, electric loading winch and a wide cargo door.Heated cabin. Documents are available.\n' +
+                'Avg. gas 100LL consumption at the cruise speed of 200 km/h and load of 2,000 kg is 380 liters. Good condition of exterior skin and interior. Technically sound.\n' +
+                'Airframe: Total flight hours – 31,200 hours. No service life limit. Condition-based use. No major damage has been suffered.\n' +
+                'Engines: 2xPratt-Whitney R-1830-90D, 1,200 h.p. each, time between overhaul – 1,600 hours, time to overhaul – 1,099/1,006 (left/right).\n' +
+                'Propellers: automatic Hamilton Standard Hydromatic 23E50, time between overhaul – 2,000 hours, residual life – 1,708/1,708 (left/right).\n' +
+                'Avionics: for daylight flights in instrument weather conditions.\n' +
+                'Equipment: Ground equipment includes a set of tools for the airframe, engine and propeller. A spare P& W Radial 1830-90D with 654.5 Hrs and logbook., spare carburettor, spare cylinders, spare magnetos, spare new tyres and tubes, oil cooler, starter and hydraulic pump. List of items available on request. \n' +
+                'Parking dimensions (wing span / length / height) – 29.0/19.5/5.2 m.\n' +
+                'Empty weight – 8,000 kg.',
+            History: 'Build date: November 26, 1942г.,serial No. 6055, registration No. RA-05738\n' +
+                'A historical  “Douglas” – a C-47C type aircraft of WW2 Vintage. This particular aircraft was released into service on the 29th of November 1942. On the 29th of May 1943 it was transferred to US Command North Africa. On the 8th of September 1947 this aircraft was transferred to the 9th US Army Air Force based in France.\n' +
+                'On the 26th of November 1947 her miltrary flying days were over and she was registered F-BEF with Aigle Azur Airlines. \n' +
+                'She worked under various French and African operators until October 1983 when she returned to the USA and registered as N4550J. In 2015 she was sold to the Russian Aviation Company and flown to Russia together with N12BA. \n' +
+                '\n' +
+                '2015 – Took part in a legendary Alaska-Siberia 2015 flight dedicated to the 70th anniversary of the Victory in the Great Patriotic War.\n' +
+                '2015 – Took part in the International Aviation and Space Salon MAKS-2015.\n' +
+                '2016 – Performed a flight at the opening of the International Army Games 2016 at the Alabino training ground.\n' +
+                '2017– Took part in filming a feature motion picture Corridor of Immortality.\n' +
+                '2019 - Booked to fly with N12BA to Daks over Normandy.',
+        },
+    },
+    {
+        NAME: 'Lightning T. Mk5 ZU-BBD',
+        TOPIMAGE: importAll(require.context('../planes/Lightning T. Mk5 ZU-BBD/TopIMG', false, /\.(png|jpe?g|svg|webp)$/)),
+        IMAGES: importAll(require.context('../planes/Lightning T. Mk5 ZU-BBD/OtherIMG', false, /\.(png|jpe?g|svg|webp)$/)),
+        CONTENT: {
+            Aircraft_information: 'Aircraft Type: Lightning T. Mk5\n' +
+                'Registration: ZU-BBD\n' +
+                'Service Registration: XS452\n' +
+                'Built: 30/6/65\n' +
+                'Service: "452" 226 OCU, "T" 11 Sqd, "X" 111 Sqd, "X" 56 Sqd, Akrotiri Station Flight (Flamingo on PINK fin, pink-blue nose markings), used APC-detached UK Lightning squadrons, "Y" 11 Sqd (\'C\' Flt). First flight in dark green experimental camouflage.\n' +
+                'LTF, lent 5 Sqd, "T" 11 Sqd, "Z" LTF, "DZ" LTF, "BT" 11 Sqd.\n' +
+                '30/6/88 delivered to Cranfield and subsequently bought by Tony Hulls and restored. The Aircraft was fast taxied at Cranfield Airshow.\n' +
+                'Bought by Mike Beacheyhead in South Africa and registered as ZU-BBD. The aircraft has been resprayed Gloss Black.\n' +
+                '9th March 1999. XS452  flys in Cape Town, South Africa.',
+        },
+    },
+    {
+        NAME: 'Lightning F. Mk6 ZU-BEY',
+        TOPIMAGE: importAll(require.context('../planes/Lightning F. Mk6 ZU-BEY/TopIMG', false, /\.(png|jpe?g|svg|webp)$/)),
+        IMAGES: importAll(require.context('../planes/Lightning F. Mk6 ZU-BEY/OtherIMG', false, /\.(png|jpe?g|svg|webp)$/)),
+        CONTENT: {
+            Aircraft_information: 'Aircraft Type: Lightning F. Mk6\n' +
+                'Registration: ZU-BEY\n' +
+                'Service Registration: XP693',
+        },
+    },
+    {
+        NAME: 'Lightning F. Mk6 ZU-BEW',
+        TOPIMAGE: importAll(require.context('../planes/Lightning F. Mk6 ZU-BEW/TopIMG', false, /\.(png|jpe?g|svg|webp)$/)),
+        IMAGES: importAll(require.context('../planes/Lightning F. Mk6 ZU-BEW/OtherIMG', false, /\.(png|jpe?g|svg|webp)$/)),
+        CONTENT: {
+            Aircraft_information: 'Aircraft Type: Lightning F. Mk6\n' +
+                'Registration: ZU-BEW\n' +
+                'Service Registration: XR773',
+        },
+    },
+    {
+        NAME: 'Blackburn Buccaneer S Mk.2B ZU-AVI',
+        TOPIMAGE: importAll(require.context('../planes/Blackburn Buccaneer S Mk.2B ZU-AVI/TopIMG', false, /\.(png|jpe?g|svg|webp)$/)),
+        IMAGES: importAll(require.context('../planes/Blackburn Buccaneer S Mk.2B ZU-AVI/OtherIMG', false, /\.(png|jpe?g|svg|webp)$/)),
+        CONTENT: {
+            History: 'The Blackburn Buccaneer was a British low-level strike aircraft with nuclear weapon delivery capability serving with the Royal Navy and the Royal Air Force between 1962 and 1994, including service in the 1991 Gulf War. Designed and initially produced by Blackburn Aircraft at Brough it was later known as the Hawker Siddeley Buccaneer when Blackburn became a part of the Hawker Siddeley group.\n' +
+                '\n' +
+                'The final three, all owned by Thunder City (XW 986 – now ZU NIP , XW 987 – now ZU BCR and XW 988 – now ZU AVI ) were built specifically for the Defence Ministry (MoD) and primarily used on countless research programs.\n' +
+                '\n' +
+                'The Buccaneer was a mid-wing, twin-engine monoplane with a crew of two seated in tandem under a sliding canopy. To meet the demands of the specification, the Buccaneer featured a number of advanced design features. The fuselage was area ruled; meaning it was designed to reduce drag at transonic speeds. This gives rise to the characteristic curvy "Coke bottle" shape. It featured a variable incidence tailplane that could be trimmed to suit the particular requirements of low-speed handling or high-speed flight. At the low-levels and high speeds traditional bomb bay doors could not be opened safely into the air stream, therefore doors were developed that rotated into the fuselage to expose the payload. This was also useful in assisting ground-level access.\n' +
+                '\n' +
+                'The small wing of the Buccaneer was suited to high-speed flight at low level. Such a wing, however, did not generate the lift that was essential for low-speed carrier operations. Therefore, the wing and horizontal stabiliser were "blown" by bleeding compressor gas from the engine through surface vents. A consequence of the blown wing was that the engines were required to run at high power for low-speed flight in order to generate sufficient compressor gas for blowing. Blackburn\'s solution to this situation was to provide a large airbrake. The tail cone was formed from two leaves that could be hydraulically opened into the airstream to decelerate the aircraft. The nose cone and radar antenna could also be swung around by 180° to reduce the length of the aircraft in the carrier hangar. This feature was particularly important as contemporary British aircraft carriers were small.',
+            Description: 'The Buccaneer S Mk 2B is an updated version of the Mk 1 aircraft. Although retaining the main features of the earlier version i.e., the moderately swept, blended-kink main planes, a high-set, all moving tail plane and a cone shaped rear fuselage extension (which opens clamshell fashion to serve as an air brake), the Mk 2 Series aircraft can be distinguished by the larger engine intakes of elliptical section and the absence of the small auxiliary air intakes on the inboard side of each engine air intake and leading edge of each inner wing.\n' +
+                'An improved a.c. generating system and the introduction of the Rolls Royce Spey engine power units formed the major changes to this already successful aircraft.\n' +
+                'A full description of the aircraft can be found in AP101B-1202-1B.\n' +
+                '\n' +
+                'The aircraft have been subjected to regular Primary Star Inspections. Refer to Annexure A.1 for information relating to the next service requirement.',
+            Aircraft_information: 'Aircraft Type: Buccaneer S Mk 2B\n' +
+                'Registration: ZU-AVI\n' +
+                'Service Registration: XW988\n' +
+                'Modification State:\n' +
+                'The aircraft have been modified to the latest modification state as defined in the Master Modification Listing. All Mandatory modifications have been complied with.\n' +
+                'In addition all STI’s and SI’s have been complied with, including all NDT requirements.\n' +
+                '\n' +
+                'Fatigue State:\n' +
+                'All of the fatigue records for this aircraft are available.\n' +
+                'Refer Annexure A.1 for detailed fatigue states.\n' +
+                'The published life of the aircraft wings are 269 FI.\n' +
+                '\n' +
+                'Engines:\n' +
+                'The aircraft are fitted with Rolls Royce Spey 10101 engines (refer Annexure A.1 for serial numbers and engine life). Each engine has a published life of 1200 hours, time before overhaul. They are original build engines and have been returned to Rolls Royce during their life for upgrades and repairs only and have never been overhauled.\n' +
+                'The engines are started by means of an external LP air start trolley which delivers low pressure air via a hose connected to each engine starter.\n' +
+                '\n' +
+                'Ejection Seats:\n' +
+                'The aircraft are equipped with Martin Baker Type 6MS B2 rocket assisted ejection seats. These seats have been serviced by Thunder City AMO (refer Annexure A.1 for details) including the survival packs and parachutes.\n' +
+                '\n' +
+                'Drop Tanks:\n' +
+                'The aircraft are capable of carrying two external 250 gallon slipper tanks, one on each wing. They are jettisonable and are fitted on the inboard station on each wing. As a safety measure the explosive jettison circuit is not armed although the tanks are fitted. They are therefore an integral part of the aircraft and cannot be remotely jettisoned.\n' +
+                '\n' +
+                'Electrical System:\n' +
+                'Two 30 kVA, 200V, 400 Hz a.c. generators provide the primary source of electrical power. One air cooled generator is driven by each engine through the Constant Speed Drive Unit (CSDU). From the 200V ac supply, a 115V ac supply is obtained through a step down transformer, and a 28V dc supply obtained through two transformer/rectifier units. Should the generating system fail the battery is automatically isolated from all but essential services.\n' +
+                '\n' +
+                'Radios:\n' +
+                'The aircraft are equipped with the following radio equipment:\n' +
+                'Marconi AD120 - VHF Comm - Qty 1\n' +
+                'Plessey PTR 1751 - UHF Comm - Qty 1\n' +
+                'Hoffman RT636 - TACAN - Qty 1\n' +
+                'Cossar 1520 - Transponder - Qty 1\n' +
+                'Smiths - ILS System - Qty 1\n' +
+                'Smiths - Radio Altimeter - Qty 1\n' +
+                '\n' +
+                'Systems:\n' +
+                'The main flying control surfaces are controlled by an orthodox control column and rudder pedals, operation being effected by hydraulically-powered control units.\n' +
+                '\n' +
+                'Each power unit, one for each aileron, one for the rudder and one for the tail plane, is fully duplicated by a tandem ram served by two independent hydraulic systems.\n' +
+                '\n' +
+                'Power, for the two flying controls hydraulic systems, is supplied by two pumps, one on each engine right hand gearbox. Each pump serves one half of each of the four powered control units so that, in the event of failure of either engine or pump, the flying controls remain operative.\n' +
+                '\n' +
+                'Two more hydraulic pumps, one on each right hand gearbox, provide power for the general services hydraulic system. The general services include:\n' +
+                'Landing Gear\n' +
+                'Nose wheel steering\n' +
+                'Wheel brakes\n' +
+                'Wing flaps\n' +
+                'Bomb door\n' +
+                'Air brakes\n' +
+                'Wing fold mechanism\n' +
+                'Arrestor hook\n' +
+                'Tail skid\n' +
+                'Fuel flow proportioners.\n' +
+                '\n' +
+                'This system can, under certain emergency conditions, supply hydraulic pressure to one of the two flying control hydraulic systems.\n' +
+                '\n' +
+                'To improve stability and control at low speeds, a blowing system is provided. Air, tapped from the engine compressors, is blown over the aerofoils and horizontal control surfaces. This system supplies air from the engine bleed manifold beneath each engine to ducts in the leading and trailing edges of the main planes and the leading edge of the tail plane. From these ducts the air is directed through the span wise blowing slits over sections of the aerofoil surfaces for boundary layer control purposes.\n' +
+                '\n' +
+                'An auto-pilot/autostabilizer system is fitted and connected electrically to an actuator, which forms an integral part of each powered flying control unit. Safety devices are incorporated in the flying control mechanical circuits to ensure reversion to manual mode of operation in the event of malfunctioning of the auto-pilot/autostabilizer system. For emergency use following autostabilizer yaw channel failure, a standby yaw damper system is fitted which operates an electro-mechanical actuator in the mechanical input to the rudder powered control unit.\n' +
+                '\n' +
+                'Operational Aspects:\n' +
+                'The Aircrew manual states that the fuel recuperators provide sufficient fuel for 10 seconds inverted operation only.\n' +
+                '\n' +
+                'The oxygen system is fully operational, as is the oxygen system on each ejector seat. The cabin pressurization and anti-g systems are operational, as is the windscreen de-icing.\n' +
+                'The arrestor hook is also fully operational for emergency landings on airfields fitted with an arrestor wire.\n' +
+                '\n' +
+                'Manuals:\n' +
+                'A full set of manuals relating to the maintenance of the aircraft and associated equipment is available to the operator as listed in AP101B-1202-1B, Cover 1.\n' +
+                '\n' +
+                'Noise Certification:\n' +
+                'The aircraft does not require a noise certificate as it operates on an Authority to Fly.\n' +
+                '\n' +
+                'Limitations and Concessions:\n' +
+                'The aircraft must be operated in accordance with the Flight Reference Cards (AP101B-1202-14), Aircrew Manual (AP101B01202-15A) and Operating Data Manual (AP101B-1202-16(R)).'
+        },
+    },
+    {
+        NAME: 'Blackburn Buccaneer S Mk.2B ZU-BCR',
+        TOPIMAGE: importAll(require.context('../planes/Blackburn Buccaneer S Mk.2B ZU-BCR/TopIMG', false, /\.(png|jpe?g|svg|webp)$/)),
+        IMAGES: importAll(require.context('../planes/Blackburn Buccaneer S Mk.2B ZU-BCR/OtherIMG', false, /\.(png|jpe?g|svg|webp)$/)),
+        CONTENT: {
+            History: 'The Blackburn Buccaneer was a British low-level strike aircraft with nuclear weapon delivery capability serving with the Royal Navy and the Royal Air Force between 1962 and 1994, including service in the 1991 Gulf War. Designed and initially produced by Blackburn Aircraft at Brough it was later known as the Hawker Siddeley Buccaneer when Blackburn became a part of the Hawker Siddeley group.\n' +
+                '\n' +
+                'The final three, all owned by Thunder City (XW 986 – now ZU NIP , XW 987 – now ZU BCR and XW 988 – now ZU AVI ) were built specifically for the Defence Ministry (MoD) and primarily used on countless research programs.\n' +
+                '\n' +
+                'The Buccaneer was a mid-wing, twin-engine monoplane with a crew of two seated in tandem under a sliding canopy. To meet the demands of the specification, the Buccaneer featured a number of advanced design features. The fuselage was area ruled; meaning it was designed to reduce drag at transonic speeds. This gives rise to the characteristic curvy "Coke bottle" shape. It featured a variable incidence tailplane that could be trimmed to suit the particular requirements of low-speed handling or high-speed flight. At the low-levels and high speeds traditional bomb bay doors could not be opened safely into the air stream, therefore doors were developed that rotated into the fuselage to expose the payload. This was also useful in assisting ground-level access.\n' +
+                '\n' +
+                'The small wing of the Buccaneer was suited to high-speed flight at low level. Such a wing, however, did not generate the lift that was essential for low-speed carrier operations. Therefore, the wing and horizontal stabiliser were "blown" by bleeding compressor gas from the engine through surface vents. A consequence of the blown wing was that the engines were required to run at high power for low-speed flight in order to generate sufficient compressor gas for blowing. Blackburn\'s solution to this situation was to provide a large airbrake. The tail cone was formed from two leaves that could be hydraulically opened into the airstream to decelerate the aircraft. The nose cone and radar antenna could also be swung around by 180° to reduce the length of the aircraft in the carrier hangar. This feature was particularly important as contemporary British aircraft carriers were small.',
+            Description: 'The Buccaneer S Mk 2B is an updated version of the Mk 1 aircraft. Although retaining the main features of the earlier version i.e., the moderately swept, blended-kink main planes, a high-set, all moving tail plane and a cone shaped rear fuselage extension (which opens clamshell fashion to serve as an air brake), the Mk 2 Series aircraft can be distinguished by the larger engine intakes of elliptical section and the absence of the small auxiliary air intakes on the inboard side of each engine air intake and leading edge of each inner wing.\n' +
+                'An improved a.c. generating system and the introduction of the Rolls Royce Spey engine power units formed the major changes to this already successful aircraft.\n' +
+                'A full description of the aircraft can be found in AP101B-1202-1B.\n' +
+                '\n' +
+                'The aircraft have been subjected to regular Primary Star Inspections. Refer to Annexure A.1 for information relating to the next service requirement.',
+            Aircraft_information: 'Aircraft Type: Buccaneer S Mk 2B\n' +
+                'Aircraft Type: Buccaneer S Mk 2B\n' +
+                'Registration: ZU-BCR\n' +
+                'Service Registration: XW987\n' +
+                'Modification State:\n' +
+                'The aircraft have been modified to the latest modification state as defined in the Master Modification Listing. All Mandatory modifications have been complied with.\n' +
+                'In addition all STI’s and SI’s have been complied with, including all NDT requirements.\n' +
+                '\n' +
+                'Fatigue State:\n' +
+                'All of the fatigue records for this aircraft are available.\n' +
+                'Refer Annexure A.1 for detailed fatigue states.\n' +
+                'The published life of the aircraft wings are 269 FI.\n' +
+                '\n' +
+                'Engines:\n' +
+                'The aircraft are fitted with Rolls Royce Spey 10101 engines (refer Annexure A.1 for serial numbers and engine life). Each engine has a published life of 1200 hours, time before overhaul. They are original build engines and have been returned to Rolls Royce during their life for upgrades and repairs only and have never been overhauled.\n' +
+                'The engines are started by means of an external LP air start trolley which delivers low pressure air via a hose connected to each engine starter.\n' +
+                '\n' +
+                'Ejection Seats:\n' +
+                'The aircraft are equipped with Martin Baker Type 6MS B2 rocket assisted ejection seats. These seats have been serviced by Thunder City AMO (refer Annexure A.1 for details) including the survival packs and parachutes.\n' +
+                '\n' +
+                'Drop Tanks:\n' +
+                'The aircraft are capable of carrying two external 250 gallon slipper tanks, one on each wing. They are jettisonable and are fitted on the inboard station on each wing. As a safety measure the explosive jettison circuit is not armed although the tanks are fitted. They are therefore an integral part of the aircraft and cannot be remotely jettisoned.\n' +
+                '\n' +
+                'Electrical System:\n' +
+                'Two 30 kVA, 200V, 400 Hz a.c. generators provide the primary source of electrical power. One air cooled generator is driven by each engine through the Constant Speed Drive Unit (CSDU). From the 200V ac supply, a 115V ac supply is obtained through a step down transformer, and a 28V dc supply obtained through two transformer/rectifier units. Should the generating system fail the battery is automatically isolated from all but essential services.\n' +
+                '\n' +
+                'Radios:\n' +
+                'The aircraft are equipped with the following radio equipment:\n' +
+                'Marconi AD120 - VHF Comm - Qty 1\n' +
+                'Plessey PTR 1751 - UHF Comm - Qty 1\n' +
+                'Hoffman RT636 - TACAN - Qty 1\n' +
+                'Cossar 1520 - Transponder - Qty 1\n' +
+                'Smiths - ILS System - Qty 1\n' +
+                'Smiths - Radio Altimeter - Qty 1\n' +
+                '\n' +
+                'Systems:\n' +
+                'The main flying control surfaces are controlled by an orthodox control column and rudder pedals, operation being effected by hydraulically-powered control units.\n' +
+                '\n' +
+                'Each power unit, one for each aileron, one for the rudder and one for the tail plane, is fully duplicated by a tandem ram served by two independent hydraulic systems.\n' +
+                '\n' +
+                'Power, for the two flying controls hydraulic systems, is supplied by two pumps, one on each engine right hand gearbox. Each pump serves one half of each of the four powered control units so that, in the event of failure of either engine or pump, the flying controls remain operative.\n' +
+                '\n' +
+                'Two more hydraulic pumps, one on each right hand gearbox, provide power for the general services hydraulic system. The general services include:\n' +
+                'Landing Gear\n' +
+                'Nose wheel steering\n' +
+                'Wheel brakes\n' +
+                'Wing flaps\n' +
+                'Bomb door\n' +
+                'Air brakes\n' +
+                'Wing fold mechanism\n' +
+                'Arrestor hook\n' +
+                'Tail skid\n' +
+                'Fuel flow proportioners.\n' +
+                'This system can, under certain emergency conditions, supply hydraulic pressure to one of the two flying control hydraulic systems.\n' +
+                '\n' +
+                'To improve stability and control at low speeds, a blowing system is provided. Air, tapped from the engine compressors, is blown over the aerofoils and horizontal control surfaces. This system supplies air from the engine bleed manifold beneath each engine to ducts in the leading and trailing edges of the main planes and the leading edge of the tail plane. From these ducts the air is directed through the span wise blowing slits over sections of the aerofoil surfaces for boundary layer control purposes.\n' +
+                '\n' +
+                'An auto-pilot/autostabilizer system is fitted and connected electrically to an actuator, which forms an integral part of each powered flying control unit. Safety devices are incorporated in the flying control mechanical circuits to ensure reversion to manual mode of operation in the event of malfunctioning of the auto-pilot/autostabilizer system. For emergency use following autostabilizer yaw channel failure, a standby yaw damper system is fitted which operates an electro-mechanical actuator in the mechanical input to the rudder powered control unit.\n' +
+                '\n' +
+                'Operational Aspects:\n' +
+                ' \n' +
+                'The Aircrew manual states that the fuel recuperators provide sufficient fuel for 10 seconds inverted operation only.\n' +
+                'The oxygen system is fully operational, as is the oxygen system on each ejector seat. The cabin pressurization and anti-g systems are operational, as is the windscreen de-icing.\n' +
+                'The arrestor hook is also fully operational for emergency landings on airfields fitted with an arrestor wire.\n' +
+                '\n' +
+                'Manuals:\n' +
+                'A full set of manuals relating to the maintenance of the aircraft and associated equipment is available to the operator as listed in AP101B-1202-1B, Cover 1.\n' +
+                '\n' +
+                'Noise Certification:\n' +
+                'The aircraft does not require a noise certificate as it operates on an Authority to Fly.\n' +
+                '\n' +
+                'Limitations and Concessions:\n' +
+                'The aircraft must be operated in accordance with the Flight Reference Cards (AP101B-1202-14), Aircrew Manual (AP101B01202-15A) and Operating Data Manual (AP101B-1202-16(R)).'
+        },
+    },
+    {
+        NAME: 'Blackburn Buccaneer S Mk.2B ZU-NIP',
+        TOPIMAGE: importAll(require.context('../planes/Blackburn Buccaneer S Mk.2B ZU-NIP/TopIMG', false, /\.(png|jpe?g|svg|webp)$/)),
+        IMAGES: importAll(require.context('../planes/Blackburn Buccaneer S Mk.2B ZU-NIP/OtherIMG', false, /\.(png|jpe?g|svg|webp)$/)),
+        CONTENT: {
+            History: 'The Blackburn Buccaneer was a British low-level strike aircraft with nuclear weapon delivery capability serving with the Royal Navy and the Royal Air Force between 1962 and 1994, including service in the 1991 Gulf War. Designed and initially produced by Blackburn Aircraft at Brough it was later known as the Hawker Siddeley Buccaneer when Blackburn became a part of the Hawker Siddeley group.\n' +
+                '\n' +
+                'The final three, all owned by Thunder City (XW 986 – now ZU NIP , XW 987 – now ZU BCR and XW 988 – now ZU AVI ) were built specifically for the Defence Ministry (MoD) and primarily used on countless research programs.\n' +
+                '\n' +
+                'The Buccaneer was a mid-wing, twin-engine monoplane with a crew of two seated in tandem under a sliding canopy. To meet the demands of the specification, the Buccaneer featured a number of advanced design features. The fuselage was area ruled; meaning it was designed to reduce drag at transonic speeds. This gives rise to the characteristic curvy "Coke bottle" shape. It featured a variable incidence tailplane that could be trimmed to suit the particular requirements of low-speed handling or high-speed flight. At the low-levels and high speeds traditional bomb bay doors could not be opened safely into the air stream, therefore doors were developed that rotated into the fuselage to expose the payload. This was also useful in assisting ground-level access.\n' +
+                '\n' +
+                'The small wing of the Buccaneer was suited to high-speed flight at low level. Such a wing, however, did not generate the lift that was essential for low-speed carrier operations. Therefore, the wing and horizontal stabiliser were "blown" by bleeding compressor gas from the engine through surface vents. A consequence of the blown wing was that the engines were required to run at high power for low-speed flight in order to generate sufficient compressor gas for blowing. Blackburn\'s solution to this situation was to provide a large airbrake. The tail cone was formed from two leaves that could be hydraulically opened into the airstream to decelerate the aircraft. The nose cone and radar antenna could also be swung around by 180° to reduce the length of the aircraft in the carrier hangar. This feature was particularly important as contemporary British aircraft carriers were small.',
+            Description: 'The Buccaneer S Mk 2B is an updated version of the Mk 1 aircraft. Although retaining the main features of the earlier version i.e., the moderately swept, blended-kink main planes, a high-set, all moving tail plane and a cone shaped rear fuselage extension (which opens clamshell fashion to serve as an air brake), the Mk 2 Series aircraft can be distinguished by the larger engine intakes of elliptical section and the absence of the small auxiliary air intakes on the inboard side of each engine air intake and leading edge of each inner wing.\n' +
+                'An improved a.c. generating system and the introduction of the Rolls Royce Spey engine power units formed the major changes to this already successful aircraft.\n' +
+                'A full description of the aircraft can be found in AP101B-1202-1B.\n' +
+                '\n' +
+                'The aircraft have been subjected to regular Primary Star Inspections. Refer to Annexure A.1 for information relating to the next service requirement.',
+            Aircraft_information: 'Aircraft Type: Buccaneer S Mk 2B\n' +
+                'Registration: ZU-NIP\n' +
+                'Service Registration: XW986\n' +
+                'Modification State:\n' +
+                'The aircraft have been modified to the latest modification state as defined in the Master Modification Listing. All Mandatory modifications have been complied with.\n' +
+                'In addition all STI’s and SI’s have been complied with, including all NDT requirements.\n' +
+                '\n' +
+                'Fatigue State:\n' +
+                'All of the fatigue records for this aircraft are available.\n' +
+                'Refer Annexure A.1 for detailed fatigue states.\n' +
+                'The published life of the aircraft wings are 269 FI.\n' +
+                '\n' +
+                'Engines:\n' +
+                'The aircraft are fitted with Rolls Royce Spey 10101 engines (refer Annexure A.1 for serial numbers and engine life). Each engine has a published life of 1200 hours, time before overhaul. They are original build engines and have been returned to Rolls Royce during their life for upgrades and repairs only and have never been overhauled.\n' +
+                'The engines are started by means of an external LP air start trolley which delivers low pressure air via a hose connected to each engine starter.\n' +
+                '\n' +
+                'Ejection Seats:\n' +
+                '\n' +
+                'The aircraft are equipped with Martin Baker Type 6MS B2 rocket assisted ejection seats. These seats have been serviced by Thunder City AMO (refer Annexure A.1 for details) including the survival packs and parachutes.\n' +
+                '\n' +
+                'Drop Tanks:\n' +
+                'The aircraft are capable of carrying two external 250 gallon slipper tanks, one on each wing. They are jettisonable and are fitted on the inboard station on each wing. As a safety measure the explosive jettison circuit is not armed although the tanks are fitted. They are therefore an integral part of the aircraft and cannot be remotely jettisoned.\n' +
+                '\n' +
+                'Electrical System:\n' +
+                'Two 30 kVA, 200V, 400 Hz a.c. generators provide the primary source of electrical power. One air cooled generator is driven by each engine through the Constant Speed Drive Unit (CSDU). From the 200V ac supply, a 115V ac supply is obtained through a step down transformer, and a 28V dc supply obtained through two transformer/rectifier units. Should the generating system fail the battery is automatically isolated from all but essential services.\n' +
+                '\n' +
+                'Radios:\n' +
+                'The aircraft are equipped with the following radio equipment:\n' +
+                'Marconi AD120 - VHF Comm - Qty 1\n' +
+                'Plessey PTR 1751 - UHF Comm - Qty 1\n' +
+                'Hoffman RT636 - TACAN - Qty 1\n' +
+                'Cossar 1520 - Transponder - Qty 1\n' +
+                'Smiths - ILS System - Qty 1\n' +
+                'Smiths - Radio Altimeter - Qty 1\n' +
+                '\n' +
+                'Systems:\n' +
+                'The main flying control surfaces are controlled by an orthodox control column and rudder pedals, operation being effected by hydraulically-powered control units.\n' +
+                '\n' +
+                'Each power unit, one for each aileron, one for the rudder and one for the tail plane, is fully duplicated by a tandem ram served by two independent hydraulic systems.\n' +
+                '\n' +
+                'Power, for the two flying controls hydraulic systems, is supplied by two pumps, one on each engine right hand gearbox. Each pump serves one half of each of the four powered control units so that, in the event of failure of either engine or pump, the flying controls remain operative.\n' +
+                '\n' +
+                'Two more hydraulic pumps, one on each right hand gearbox, provide power for the general services hydraulic system. The general services include:\n' +
+                'Landing Gear\n' +
+                'Nose wheel steering\n' +
+                'Wheel brakes\n' +
+                'Wing flaps\n' +
+                'Bomb door\n' +
+                'Air brakes\n' +
+                'Wing fold mechanism\n' +
+                'Arrestor hook\n' +
+                'Tail skid\n' +
+                'Fuel flow proportioners.\n' +
+                '\n' +
+                'This system can, under certain emergency conditions, supply hydraulic pressure to one of the two flying control hydraulic systems.\n' +
+                '\n' +
+                'To improve stability and control at low speeds, a blowing system is provided. Air, tapped from the engine compressors, is blown over the aerofoils and horizontal control surfaces. This system supplies air from the engine bleed manifold beneath each engine to ducts in the leading and trailing edges of the main planes and the leading edge of the tail plane. From these ducts the air is directed through the span wise blowing slits over sections of the aerofoil surfaces for boundary layer control purposes.\n' +
+                '\n' +
+                'An auto-pilot/autostabilizer system is fitted and connected electrically to an actuator, which forms an integral part of each powered flying control unit. Safety devices are incorporated in the flying control mechanical circuits to ensure reversion to manual mode of operation in the event of malfunctioning of the auto-pilot/autostabilizer system. For emergency use following autostabilizer yaw channel failure, a standby yaw damper system is fitted which operates an electro-mechanical actuator in the mechanical input to the rudder powered control unit.\n' +
+                '\n' +
+                'Operational Aspects:\n' +
+                'The Aircrew manual states that the fuel recuperators provide sufficient fuel for 10 seconds inverted operation only.\n' +
+                'The oxygen system is fully operational, as is the oxygen system on each ejector seat. The cabin pressurization and anti-g systems are operational, as is the windscreen de-icing.\n' +
+                'The arrestor hook is also fully operational for emergency landings on airfields fitted with an arrestor wire.\n' +
+                '\n' +
+                'Manuals:\n' +
+                'A full set of manuals relating to the maintenance of the aircraft and associated equipment is available to the operator as listed in AP101B-1202-1B, Cover 1.\n' +
+                '\n' +
+                'Noise Certification:\n' +
+                'The aircraft does not require a noise certificate as it operates on an Authority to Fly.\n' +
+                '\n' +
+                'Limitations and Concessions:\n' +
+                'The aircraft must be operated in accordance with the Flight Reference Cards (AP101B-1202-14), Aircrew Manual (AP101B01202-15A) and Operating Data Manual (AP101B-1202-16(R)).'
         },
     },
 ];
