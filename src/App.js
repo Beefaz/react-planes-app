@@ -10,7 +10,6 @@ import SectionContent from "./components/contactForm/ContactForm";
 
 
 const App = () => {
-
     return (
         <div>
             <Router>

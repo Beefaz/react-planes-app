@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
-import {Jumbotron, Card, Image} from "react-bootstrap";
+import {Jumbotron, Card} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import {scrollToTop} from "../../constants/Constants";
 
 const InventoryCarousel = (props) => {
     const [carouselItemCount, setCarouselItemCount] = useState(1);
@@ -13,6 +14,7 @@ const InventoryCarousel = (props) => {
     };
 
     const carouselParams = {
+        startPosition: 0,
         items: carouselItemCount,
         margin: 10,
         loop: true,
@@ -22,35 +24,24 @@ const InventoryCarousel = (props) => {
         autoplay: true,
         autoplayTimeout: 2500,
         autoplayHoverPause: true,
+        center: true,
     };
     const imageContainerStyle = {
         height: '300px',
-        display: 'flex',
         overflow: 'hidden',
         borderRadius: '25px',
         textDecoration: 'none',
         whiteSpace: 'nowrap',
         backgroundColor: 'rgba(0, 0, 0, 0.5)',
     };
-    const imageWrapperStyle = {
-        display: 'flex',
-        justifyContent: 'center',
-        height: '100%',
-        width: '100%',
-    };
+
     const imageStyle = {
-        minHeight: '100%',
-        minWidth: '100%',
+        height: '100%',
         objectFit: 'cover',
         overflow: 'hidden'
     };
     const cardLabelStyle = {
-        marginTop: '12px',
         color: 'white',
-        verticalAlign: 'center',
-        marginLeft: '10px',
-        marginRight: '10px',
-        whiteSpace: 'nowrap',
         overflow: 'hidden',
         textOverflow: 'ellipsis',
         textAlign: 'center'
@@ -64,20 +55,17 @@ const InventoryCarousel = (props) => {
                     <Card key={'card'.concat(index.toString())}
                           style={imageContainerStyle}
                           as={Link}
+                          id={'item'.concat(index.toString())}
                           to={"/item/" + item.NAME.replace(/\s/g, "")}
-                          onClick={() => {
-                              window.scrollTo({top: 0, behavior: 'auto'})
-                          }}>
-                        <div style={imageWrapperStyle} ref={React.createRef()}>
-                            <Image
+                          onClick={scrollToTop}>
+                            <Card.Img
                                 style={imageStyle}
                                 variant="top"
                                 src={item.TOPIMAGE}
                                 alt="First slide"/>
-                        </div>
-                        <div>
-                            <p style={cardLabelStyle}>{item.NAME.toUpperCase()}</p>
-                        </div>
+                        <Card.Body>
+                            <Card.Text style={cardLabelStyle}>{item.NAME.toUpperCase()}</Card.Text>
+                        </Card.Body>
                     </Card>
                 ),
             )}
