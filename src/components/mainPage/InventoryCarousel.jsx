@@ -32,7 +32,6 @@ const InventoryCarousel = (props) => {
         borderRadius: '25px',
         textDecoration: 'none',
         whiteSpace: 'nowrap',
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
     };
 
     const imageStyle = {
@@ -63,7 +62,7 @@ const InventoryCarousel = (props) => {
                                 variant="top"
                                 src={item.TOPIMAGE}
                                 alt="First slide"/>
-                        <Card.Body>
+                        <Card.Body className='bg bg-secondary'>
                             <Card.Text style={cardLabelStyle}>{item.NAME.toUpperCase()}</Card.Text>
                         </Card.Body>
                     </Card>
