@@ -16,7 +16,7 @@ const MainCarousel = (props) => {
         backgroundColor: 'black',
     };
     const imgStyle = {
-        opacity: '60%',
+        opacity: '40%',
         height: '100%',
         objectFit: 'cover',
         overflow: 'hidden'
