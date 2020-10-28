@@ -45,7 +45,6 @@ const App = () => {
                 </Switch>
                 <Section sectionName={'Contact us'} id='contacts' sectionContent={SectionContent.form}/>
             </Router>
-            {console.log(scrollTarget)}
         </div>
     );
 };

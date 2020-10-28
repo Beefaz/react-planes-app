@@ -59,8 +59,7 @@ const MainCarousel = (props) => {
                     style={imgStyle}
                     className="d-block w-100"
                     src={item.image}
-                    alt="First slide"
-                />
+                    alt="First slide"/>
                 <Carousel.Caption style={captionStyle}>
                     <h1>{item.h1}</h1>
                     <h3>{item.h3}</h3>
