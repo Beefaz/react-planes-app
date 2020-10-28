@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Button, Carousel} from "react-bootstrap";
 import {useMediaPredicate} from "react-media-hook";
-import {CAROUSEL_ITEMS} from './MainCarouselItems';
+import {CAROUSEL_ITEMS} from '../../constants/MainCarouselItems';
 
 const MainCarousel = (props) => {
     const btnOnHover = {

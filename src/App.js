@@ -1,19 +1,25 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import NavBar from "./components/navbar/NavBar";
 import MainCarousel from "./components/mainPage/MainCarousel";
 import Section from "./components/section/Section";
 import InventoryCarousel from "./components/mainPage/InventoryCarousel";
 import ItemPage from "./components/itemPage/ItemPage";
-import {ITEMS} from "./planes/DATA";
+import {ITEMS} from "./constants/PlaneData";
 import SectionContent from "./components/contactForm/ContactForm";
 
 
 const App = () => {
+    const [scrollTarget, setScrollTarget] = React.useState('home');
+
+    useEffect(() => {
+        if (scrollTarget !== 'home') {document.getElementById(scrollTarget).scrollIntoView({behavior:"smooth"})}
+    });
+
     return (
         <div>
             <Router>
-                <NavBar/>
+                <NavBar scrollTarget={scrollTarget} setScrollTarget={setScrollTarget}/>
                 <Switch>
                     <Route exact path='/'>
                         <MainCarousel id='home'/>
@@ -39,6 +45,7 @@ const App = () => {
                 </Switch>
                 <Section sectionName={'Contact us'} id='contacts' sectionContent={SectionContent.form}/>
             </Router>
+            {console.log(scrollTarget)}
         </div>
     );
 };

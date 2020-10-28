@@ -1,6 +1,6 @@
-import image1 from "../../img/image1.webp";
-import image2 from "../../img/image2.webp";
-import image3 from "../../img/image3.webp";
+import image1 from "../img/image1.webp";
+import image2 from "../img/image2.webp";
+import image3 from "../img/image3.webp";
 
 export const CAROUSEL_ITEMS = [
     {

@@ -19,9 +19,9 @@ const ItemPage = (props) => {
         url: props.item.CONTENT.Video,
     };
     const newLinesToComponents = (HTMLComponentString, styleProp, content) => {
-        return content.split('\n').map((lineText, index, key) => React.createElement(HTMLComponentString, {
+        return content.split('\n').map((lineText, index) => React.createElement(HTMLComponentString, {
             style: styleProp,
-            key: 'lineText'.concat(key.toString()),
+            key: 'lineText'.concat(index.toString()),
         }, lineText))
     };
 
