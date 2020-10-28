@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-
+//old component for fetching from *.txt files
 const ItemText = (props) => {
     const [content, setContent] = useState('loading');
 

@@ -12,7 +12,6 @@ const SectionContent = {
             <Form.Group controlId="email">
                 <Form.Control name="email" placeholder="E-mail"/>
             </Form.Group>
-
             <Form.Group controlId="subject">
                 <Form.Control name="subject" placeholder="Subject"/>
             </Form.Group>

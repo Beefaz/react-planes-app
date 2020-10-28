@@ -21,7 +21,7 @@ const ItemPage = (props) => {
     const newLinesToComponents = (HTMLComponentString, styleProp, content) => {
         return content.split('\n').map((lineText, index, key) => React.createElement(HTMLComponentString, {
             style: styleProp,
-            key: lineText.concat(key.toString()),
+            key: 'lineText'.concat(key.toString()),
         }, lineText))
     };
 

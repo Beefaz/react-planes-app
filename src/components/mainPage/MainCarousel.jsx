@@ -1,49 +1,112 @@
-import React from "react";
-import {Button, Nav, Carousel} from "react-bootstrap";
-import image from "../../planes/image.webp"
+import React, {useState} from "react";
+import {Button, Carousel} from "react-bootstrap";
+import image1 from "../../img/image1.webp"
+import image2 from "../../img/image2.webp"
+import image3 from "../../img/image3.webp"
+import {useMediaPredicate} from "react-media-hook";
 
 const MainCarousel = (props) => {
-    const carouselStyle = {
+    const screenSM = useMediaPredicate("(min-width: 300px)");
+    const screenMD = useMediaPredicate("(min-width: 454px)");
+    const [opacity, setOpacity] = useState('70%');
+
+    const imgContainerStyle = {
+        height: '70vh',
+        overflow: 'hidden',
+        backgroundColor: 'black',
+    };
+    const imgStyle = {
+        opacity: '60%',
+        height: '100%',
+        objectFit: 'cover',
+        overflow: 'hidden'
     };
     const captionStyle = {
+        position: 'absolute',
+        top: screenMD ? '50%' : (screenSM ? '37%' : '25%'),
+        transform: screenMD ? 'translate(0,-50%)' : (screenSM ? 'translate(0,-37%)' : 'translate(0,-25%)'),
     };
-    return <Carousel interval={4000} fade={true} id={props.id}>
-        <Carousel.Item style={carouselStyle}>
+    const linkStyle = {
+        color: '#FFF',
+        backgroundColor: '#000',
+        opacity: opacity,
+        fontWeight: '600',
+        borderColor: 'gray',
+        padding: '15px',
+        position: 'absolute',
+        bottom: '5%',
+        left: '50%',
+        marginRight: '-50%',
+        transform: 'translate(-50%, -50%)',
+    };
+    return <Carousel interval={4000} id={props.id} style={{paddingTop: '56px'}}>
+        {console.log(screenSM)}
+        <Carousel.Item style={imgContainerStyle}>
             <img
+                style={imgStyle}
                 className="d-block w-100"
-                src={image}
+                src={image1}
                 alt="First slide"
             />
-            <Carousel.Caption>
+            <Carousel.Caption style={captionStyle}>
                 <h1>Historic and Classic Airplanes</h1>
                 <h3>Each plane has its own history.</h3>
                 <p>And it is for sale!</p>
-                <Nav.Link href="#inventory"><Button>VIEW ALL PLANES</Button></Nav.Link>
             </Carousel.Caption>
+            <Button href="#inventory"
+                    style={linkStyle}
+                    onMouseEnter={() => {
+                        setOpacity('90%')
+                    }}
+                    onMouseLeave={() => {
+                        setOpacity('70%')
+                    }}>
+                VIEW ALL PLANES
+            </Button>
         </Carousel.Item>
-        <Carousel.Item style={carouselStyle}>
+        <Carousel.Item style={imgContainerStyle}>
             <img
+                style={imgStyle}
                 className="d-block w-100"
-                src={image}
+                src={image2}
                 alt="Second slide"
             />
             <Carousel.Caption style={captionStyle}>
                 <h1>Adventure flights</h1>
                 <h3>Get your historical experience in air!</h3>
-                <Nav.Link href="#adventureFlights"><Button>REGISTER FOR FLIGHT</Button></Nav.Link>
             </Carousel.Caption>
+            <Button href="#adventureFlights"
+                    style={linkStyle}
+                    onMouseEnter={() => {
+                        setOpacity('90%')
+                    }}
+                    onMouseLeave={() => {
+                        setOpacity('70%')
+                    }}>
+                REGISTER FOR FLIGHT
+            </Button>
         </Carousel.Item>
-        <Carousel.Item style={carouselStyle}>
+        <Carousel.Item style={imgContainerStyle}>
             <img
+                style={imgStyle}
                 className="d-block w-100"
-                src={image}
+                src={image3}
                 alt="Third slide"
             />
             <Carousel.Caption style={captionStyle}>
                 <h1>Services</h1>
                 <h3>Need agent service, equipment or plane data?</h3>
-                <Nav.Link href="#contacts"><Button>CONTACT US</Button></Nav.Link>
             </Carousel.Caption>
+            <Button href="#contacts"
+                    style={linkStyle}
+                    onMouseEnter={() => {
+                        setOpacity('90%')
+                    }}
+                    onMouseLeave={() => {
+                        setOpacity('70%')
+                    }}>
+                CONTACT US
+            </Button>
         </Carousel.Item>
     </Carousel>
 };
