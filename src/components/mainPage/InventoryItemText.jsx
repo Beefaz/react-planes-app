@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+//currently not in use... scrapped *.txt files
 const InventoryItemText = (props) => {
     const [content, setContent] = useState('loading');
     fetch(props.txtLink)

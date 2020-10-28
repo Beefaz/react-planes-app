@@ -1,9 +1,7 @@
 import React, {useState} from "react";
 import {Button, Carousel} from "react-bootstrap";
-import image1 from "../../img/image1.webp"
-import image2 from "../../img/image2.webp"
-import image3 from "../../img/image3.webp"
 import {useMediaPredicate} from "react-media-hook";
+import {CAROUSEL_ITEMS} from './MainCarouselItems';
 
 const MainCarousel = (props) => {
     const screenSM = useMediaPredicate("(min-width: 300px)");
@@ -40,74 +38,31 @@ const MainCarousel = (props) => {
         transform: 'translate(-50%, -50%)',
     };
     return <Carousel interval={4000} id={props.id} style={{paddingTop: '56px'}}>
-        {console.log(screenSM)}
-        <Carousel.Item style={imgContainerStyle}>
-            <img
-                style={imgStyle}
-                className="d-block w-100"
-                src={image1}
-                alt="First slide"
-            />
-            <Carousel.Caption style={captionStyle}>
-                <h1>Historic and Classic Airplanes</h1>
-                <h3>Each plane has its own history.</h3>
-                <p>And it is for sale!</p>
-            </Carousel.Caption>
-            <Button href="#inventory"
-                    style={linkStyle}
-                    onMouseEnter={() => {
-                        setOpacity('90%')
-                    }}
-                    onMouseLeave={() => {
-                        setOpacity('70%')
-                    }}>
-                VIEW ALL PLANES
-            </Button>
-        </Carousel.Item>
-        <Carousel.Item style={imgContainerStyle}>
-            <img
-                style={imgStyle}
-                className="d-block w-100"
-                src={image2}
-                alt="Second slide"
-            />
-            <Carousel.Caption style={captionStyle}>
-                <h1>Adventure flights</h1>
-                <h3>Get your historical experience in air!</h3>
-            </Carousel.Caption>
-            <Button href="#adventureFlights"
-                    style={linkStyle}
-                    onMouseEnter={() => {
-                        setOpacity('90%')
-                    }}
-                    onMouseLeave={() => {
-                        setOpacity('70%')
-                    }}>
-                REGISTER FOR FLIGHT
-            </Button>
-        </Carousel.Item>
-        <Carousel.Item style={imgContainerStyle}>
-            <img
-                style={imgStyle}
-                className="d-block w-100"
-                src={image3}
-                alt="Third slide"
-            />
-            <Carousel.Caption style={captionStyle}>
-                <h1>Services</h1>
-                <h3>Need agent service, equipment or plane data?</h3>
-            </Carousel.Caption>
-            <Button href="#contacts"
-                    style={linkStyle}
-                    onMouseEnter={() => {
-                        setOpacity('90%')
-                    }}
-                    onMouseLeave={() => {
-                        setOpacity('70%')
-                    }}>
-                CONTACT US
-            </Button>
-        </Carousel.Item>
+        {CAROUSEL_ITEMS.map((item, index) => (
+                <Carousel.Item style={imgContainerStyle} key={'carouselItem'.concat(index.toString())}>>
+                    <img
+                        style={imgStyle}
+                        className="d-block w-100"
+                        src={item.image}
+                        alt="First slide"
+                    />
+                    <Carousel.Caption style={captionStyle}>
+                        <h1>{item.h1}</h1>
+                        <h3>{item.h3}</h3>
+                        <p>{item.p}</p>
+                    </Carousel.Caption>
+                    <Button href={item.href}
+                            style={linkStyle}
+                            onMouseEnter={() => {
+                                setOpacity('90%')
+                            }}
+                            onMouseLeave={() => {
+                                setOpacity('70%')
+                            }}>
+                        {item.btnText}
+                    </Button>
+                </Carousel.Item>
+        ),)}
     </Carousel>
 };
 
