@@ -48,7 +48,7 @@ const InventoryCarousel = (props) => {
 
     return <Jumbotron id={props.id}>
         <h3>Inventory</h3>
-        <OwlCarousel {...carouselParams} onChange={itemSizeHandler}>
+        <OwlCarousel {...carouselParams} onLoad={itemSizeHandler} onResize={itemSizeHandler}>
             {props.items.map(
                 (item, index) => (
                     <Card key={'card'.concat(index.toString())}
