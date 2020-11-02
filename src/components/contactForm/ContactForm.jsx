@@ -2,8 +2,8 @@ import React from 'react';
 import {Col, Form, Button} from "react-bootstrap";
 
 
-const SectionContent = {
-    form: <Col md={6}>
+const SectionContent = () =>{
+    return <Col md={6}>
         <Form name="contact" method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="contact-form"/>
             <Form.Group controlId="name">

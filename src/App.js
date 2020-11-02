@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import NavBar from "./components/navbar/NavBar";
 import MainCarousel from "./components/mainPage/MainCarousel";
@@ -6,18 +6,15 @@ import Section from "./components/section/Section";
 import InventoryCarousel from "./components/mainPage/InventoryCarousel";
 import ItemPage from "./components/itemPage/ItemPage";
 import {ITEMS} from "./constants/PlaneData";
-import SectionContent from "./components/contactForm/ContactForm";
 
 
 const App = () => {
-    const [scrollTarget, setScrollTarget] = React.useState('home');
-
+    const [scrollTarget, setScrollTarget] = useState('home');
     useEffect(() => {
         if (scrollTarget !== 'home') {document.getElementById(scrollTarget).scrollIntoView({behavior:"smooth"})}
     });
 
-    return (
-        <div>
+    return <div>
             <Router>
                 <NavBar scrollTarget={scrollTarget} setScrollTarget={setScrollTarget}/>
                 <Switch>
@@ -43,10 +40,9 @@ const App = () => {
                         <div>ERROR</div>
                     </Route>
                 </Switch>
-                <Section sectionName={'Contact us'} id='contacts' sectionContent={SectionContent.form}/>
+                <Section sectionName={'Contact us'} id='contacts' form={true}/>
             </Router>
         </div>
-    );
 };
 
 export default App;
