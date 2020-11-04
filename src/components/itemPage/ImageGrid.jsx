@@ -24,10 +24,10 @@ const ImageGrid = (props) => {
     return <section id={props.id}>
         <h4>{props.id}</h4>
         <Row style={rowStyle}>
-            {props.item.IMAGES.map((topimage, index) => (
+            {props.item.IMAGES.map((image, index) => (
                 <div key={'topImage'.concat(index.toString())} style={imageContainerStyle}>
                     <Image style={imageStyle}
-                           src={topimage}
+                           src={image.default}
                            alt=""/>
                 </div>
             ),)}

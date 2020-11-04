@@ -2,6 +2,7 @@ import React from 'react';
 import {Image, Jumbotron} from "react-bootstrap";
 import ImageGrid from "./ImageGrid";
 import Iframe from 'react-iframe';
+import {scrollToTop} from "../../constants/Constants";
 
 
 const ItemPage = (props) => {
@@ -25,9 +26,9 @@ const ItemPage = (props) => {
         }, lineText))
     };
 
-    return <Jumbotron>
+    return <Jumbotron id='itemPage' onLoad={scrollToTop}>
         <h1>{props.item.NAME}</h1>
-        <Image src={props.item.TOPIMAGE}
+        <Image src={props.item.TOPIMAGE[0].default}
                alt=""
                fluid/>
         {Object.keys(props.item.CONTENT).map((paragraphItem, index) => (

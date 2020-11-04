@@ -9,14 +9,15 @@ import {ITEMS} from "./constants/PlaneData";
 
 
 const App = () => {
-    const [scrollTarget, setScrollTarget] = useState('home');
+    const [scrollTarget, setScrollTarget] = useState('');
     useEffect(() => {
-        if (scrollTarget !== 'home') {document.getElementById(scrollTarget).scrollIntoView({behavior:"smooth"})}
-    });
+        if (scrollTarget !== '') {document.getElementById(scrollTarget).scrollIntoView({behavior:"smooth"})}
+        setScrollTarget('');
+    },[scrollTarget, setScrollTarget]);
 
     return <div>
             <Router>
-                <NavBar scrollTarget={scrollTarget} setScrollTarget={setScrollTarget}/>
+                <NavBar scrollTarget={scrollTarget} setScrollTarget={setScrollTarget} id='navbar'/>
                 <Switch>
                     <Route exact path='/'>
                         <MainCarousel id='home'/>
@@ -34,8 +35,6 @@ const App = () => {
                             <ItemPage item={item}/>
                         </Route>
                     ),)}
-                    <Route exact path='/#services'>
-                    </Route>
                     <Route path='/*'>
                         <div>ERROR</div>
                     </Route>

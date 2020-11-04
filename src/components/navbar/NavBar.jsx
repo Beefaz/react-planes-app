@@ -20,7 +20,9 @@ const NavBar = (props) => {
                     <NavLink {...props}
                              item={item}
                              index={index}
-                             key={'link'.concat(index.toString())}/>
+                             key={'link'.concat(index.toString())}
+                             scrollTarget={props.scrollTarget}
+                             setScrollTarget={props.setScrollTarget}/>
                 ),)}
             </Nav>
         </Navbar.Collapse>
