@@ -989,4 +989,148 @@ export const ITEMS = [
                 'The aircraft must be operated in accordance with the Flight Reference Cards (AP101B-1202-14), Aircrew Manual (AP101B01202-15A) and Operating Data Manual (AP101B-1202-16(R)).'
         },
     },
+    {
+        NAME: 'Hawker Hunter F. Mk6A ZU-AUJ',
+        TOPIMAGE: importAll(require.context('../planes/Hawker Hunter F. Mk6A ZU-AUJ/TopIMG', false, /\.(png|jpe?g|svg|webp)$/)),
+        IMAGES: importAll(require.context('../planes/Hawker Hunter F. Mk6A ZU-AUJ/OtherIMG', false, /\.(png|jpe?g|svg|webp)$/)),
+        CONTENT: {
+            Status: 'We are delighted to be acting on behalf of Thunder City Aircraft Company (Pty) Limited in the sale of their fleet of Hunters, Buccaneers and Lightnings.\n' +
+                '\n' +
+                'ZU-AUJ is one of four Hunters we have listed and is a single-seat F. Mk6A version of this famous Cold War fighter.\n' +
+                'Aircraft Type: Hunter F. Mk6A\n' +
+                'Registration: ZU-AUJ\n' +
+                'Service Registration: XE653',
+            History: 'Hawker 1025 based on the Gloster E28 general layout with a 35° sweep back. Powered by the Rolls Royce Nene engine rated at 5,200 pounds of thrust. This was in 1947. by 16 May 1953, production went ahead on the Hunter F with the Rolls Royce Avon Mk 10501 engine without reheat rated at 6 500 pounds of thrust.\n' +
+                'This aircraft, which spent nearly five years with 111 Squadron’s Black Arrows display team, was built at the HAL plant at Kingston in England and first flown on 6 July 1956. It was one of the twenty-two Hunters that performed the record-breaking formation loop at the 1958 Farnborough Air Show. Converted to K.MK.6a configuration in 1975,it spent most of its life with various RAF squadrons including the Tactical Weapons Unit as a ground attack and air to air combat aircraft and was later flown to Cape Town via Bari, Luxor, Khartoum, Addis Abbaba, Nairobi, Lilongwe and Johannesburg. It is one of the only three F6A’s still flying and widely considered to be the finest variant of the marque.',
+            Aircraft_information: 'Power plants: Rolls Royce Avon Mk 207C – 15 stage axial flow turbojet rated at 10 200 pounds of thrust\n' +
+                'Performance: Rate of climb 20 000 feet per minute\n' +
+                'Max level speed: 1,150 km/h or Mach0.97\n' +
+                'Combat radius: 720nm Hi-Lo-Hi\n' +
+                'Max ferry range: 1,840nm or 2960 km\n' +
+                'Average clean gross weight: 16 – 18,000 pounds\n' +
+                'Max ferry takeoff weight: 24:000 pounds\n' +
+                'Fuel load: 3,000 pounds or 1,900 litre internal\n' +
+                'Two 150 gallon drop tanks and 100 gallon tanks\n' +
+                '\n' +
+                'Dimensions: \n' +
+                'Wingspan – 33 feet \n' +
+                'Length – 45 feet\n' +
+                'Height – 13 feet',
+        },
+    },
+    {
+        NAME: 'Hawker Hunter T. Mk7 ZU-LEE',
+        TOPIMAGE: importAll(require.context('../planes/Hawker Hunter T. Mk7 ZU-LEE/TopIMG', false, /\.(png|jpe?g|svg|webp)$/)),
+        IMAGES: importAll(require.context('../planes/Hawker Hunter T. Mk7 ZU-LEE/OtherIMG', false, /\.(png|jpe?g|svg|webp)$/)),
+        CONTENT: {
+            Status: 'We are delighted to be acting on behalf of Thunder City Aircraft Company (Pty) Limited in the sale of their fleet of Hunters, Buccaneers and Lightnings.\n' +
+                'ZU-LEE is one of four Hunters we have listed and is a two-seat T. Mk8A version of this famous Cold War fighter.\n' +
+                '\n' +
+                'Aircraft Type: Hunter T. Mk7\n' +
+                'Registration: ZU-LEE\n' +
+                'Service Registration: XL613',
+        },
+    },
+    {
+        NAME: 'Hawker Hunter T. Mk8C ZU-ATH',
+        TOPIMAGE: importAll(require.context('../planes/Hawker Hunter T. Mk8C ZU-ATH/TopIMG', false, /\.(png|jpe?g|svg|webp)$/)),
+        IMAGES: importAll(require.context('../planes/Hawker Hunter T. Mk8C ZU-ATH/OtherIMG', false, /\.(png|jpe?g|svg|webp)$/)),
+        CONTENT: {
+            Status: 'We are delighted to be acting on behalf of Thunder City Aircraft Company (Pty) Limited in the sale of their fleet of Hunters, Buccaneers and Lightnings.\n' +
+                'ZU-ATH is one of four Hunters we have listed and is a two-seat T. Mk8C version of this famous Cold War fighter.\n' +
+                '\n' +
+                'Aircraft Type: Hunter T. Mk8C\n' +
+                'Registration: ZU-ATH\n' +
+                'Service Registration: XL598',
+            Introduction: 'This aircraft was one of ten Mk.7’s transferred to Royal Navy contract, while on the HAL production line at Kingston and completed to Mk.8 specifications. An arrester hook was added for short field landings. First flown on 15 October 1958, it was operated by the Royal Navy and saw services with the major training establishments, 738 and 764 Squadrons. The aircraft was flown to Exeter airport for preparation and the onward ferry flight to Cape Town, arriving in April 1995.',
+            Aircraft_build_standart: 'The Hawker Hunter T8C is the Naval version (with arrester hook) of the RAF\'s T7 which is capable of carrying 4 drop tanks. It is a two seat side-by-side trainer/operational version of the single seat fighter monoplane powered by a Rolls Royce Mk 12201 turbine engine. This aircraft was built as a T8C under contract number 6/ACFT/12626/CB9(c) and the constructors number given above is that of the fuselage. Copies of the Hawker Aviation Ltd records define this build standard together with modification statement and statement of compliance with Special Technical Instructions current at the time. A detailed description of the aircraft may be obtained by reference to the publications listed in section 6 below.',
+            Approval_basis: 'The original basis of Service acceptance is AvP-970, the type record exists and British Aerospace Farnborough is still responsible for the design. CAA approval is based on the satisfactory service history of the type and the approved maintenance schedules.',
+            Technical_information: 'Armament originally consisted of one 30 mm Aden cannon in the lower forward fuselage but this has been deleted and replaced with appropriate ballast. All historical documentation is available. An electrically actuated follow-up tailplane provides longitudinal trim and a back-up actuator is incorporated. The ailerons and elevators are hydraulically boosted with manual reversion (automatic as hydraulic pressure becomes low). Undercarriage incorporates Maxaret anti-lock units and in the event of hydraulic system failure air bottles provide undercarriage blow-down and operation of flaps and wheel brakes.',
+            Modification_state: 'The aircraft has been modified to the latest modification state as required for airworthiness. All Mandatory modifications have been complied with. All relevant SI\'s and STI\'s have been complied with, including special NDT requirements.',
+            Fatique_state: 'A Mk14 Fatigue Meter has been fitted to the aircraft for its entire life (the current meter is serial number 3274-M-67 and the operational life consumed has been accounted for in accordance with AP101B-1302-1 Section 2 Chapter 3.)',
+            Table: 'At aircraft hours 8517.1 hours the FI was:\n' +
+                '\n' +
+                ' \n' +
+                '\n' +
+                'Part                               Serial No.         FI                      FI        FI\n' +
+                '\n' +
+                'Limit   Remaining\n' +
+                '\n' +
+                ' \n' +
+                '\n' +
+                'Centre Fuselage          41H-695320    43.481766       100      56.158234\n' +
+                '\n' +
+                'Port Mainplane            41H-692311    66.915134       111      44.084866\n' +
+                '\n' +
+                'Stbd mainplane           41H-xxxxxx      tbc                    111     ',
+            Engine:'The installed Rolls Royce Avon Mk 12201 engine Serial Number 7392/A654159 was reconditioned by Rolls Royce, East Kilbride on 28th October 1992. It was installed into this aircraft on 14th January 1993 at 7973.55 hours. The reconditioning life is 900 hours with a \'Hot Section\' due at 450 hours, time since overhaul. The time remaining to this \'Hot Section\' is 358.15 hours. The engine is to the latest mod state and has a new LP disc and blades. (see Rolls Royce print-out of Group A parts) Engine cycle usage rate (including ground running carried out in lieu of corrosion inhibiting) is to be accounted in accordance with Rolls Royce Manual viz. 4.0 cycles equivalent to 1 flight hour.\n' +
+                '\n' +
+                'A triple breech cartridge starter is fitted. Fire warning and extinguisher systems are provided and operational. The oil supply system limits negative \'g\' to 10 seconds operation only.',
+            Ejection_seats: 'The two Martin-Baker type 4HA(N) Mk 1 seats serial No\'s R76 and R81 have been serviced in accordance with AP109B-0131-12. The parachutes and survival packs have also been serviced in accordance with the relevant Air Publications.',
+            Drop_tanks: 'The aircraft is cleared to carry 2 x 230 gallon drop tanks on the inboard pylons only provided no more than 4 g was applied with fuel in the tanks or 5 g with tanks empty.',
+            Weight_and_balance: 'The aircrafts weight is 13,347 lbs. The CG is at 0.45 in aft.',
+            Electrical_system: 'In the event of generator failure, a dolls eye provides warning that battery power is being consumed. A load analysis confirms that battery duration is adequate for 30 mins flight (in accordance with Airworthiness Notice 88) in this event and load shedding procedures are contained in the applicants supplement to the Aircrew Manual.',
+            Radio:'The following military radio equipment has been retained:\n' +
+                '\n' +
+                'No off              Function          Manufacturer             Type              \n' +
+                '\n' +
+                '1                      VHF Comm     Marconi                       AD120           \n' +
+                '\n' +
+                '1                      UHF                 Marconi                       PTR 1751                   \n' +
+                '\n' +
+                '1                      Transponder   Cossor                         SSR1520',
+            Operational_aspects: 'The Aircrew Manual states that the negative \'g\' fuel traps provide capacity for "approximately 10 seconds" of negative \'g\' flight.\n' +
+                '\n' +
+                'The brake parachute is not to be relied upon in order to enable planned landing at a field shorter than that which would be required without this parachute. The brake parachute is to be employed only to save wear on the undercarriage, tyres and brakes. The Mk 5D gaseous oxygen system is fully operational, as is the oxygen system on each ejector seat, and altitude will thus be limited by radio fit for compliance with the Air Navigation Order. The cabin pressurisation and anti-g systems are operational, as is windscreen de-icing.\n' +
+                '\n' +
+                'Although not a formal limitation the MoD documentation covering release to service cautions that engine response will be degraded if rpm is allowed to fall below 4500 on approach.',
+            Manuals: 'A complete set of manuals AP101B-1309 (previously referenced AP 4347) including Bay Servicing requirements and the following is available:\n' +
+                'AP101B-1305 and 6-15 Aircrew Manual\n' +
+                'AP101B-1311-14 Flight Reference Cards\n' +
+                'AP101B-1302-1 Hunter Aircraft Servicing Manual\n' +
+                'AP 100E-01B Avon Mk 122 Engine Maintenance Manual',
+            Noise_certification: 'A noise certificate is not required for this aircraft as it operates on a Permit to Fly.',
+            Limitations_and_concessions: 'Airframe and Engine limitations are given in AP 101B-1305 and 6-15 Aircrew Manual, except that those below are to be employed where they are different (* - to be placarded or otherwise marked on gauges):\n' +
+                '\n' +
+                'Aerobatics are permitted in accordance with the Pilots Notes, but flick maneuvers and intentional stalling and spinning are prohibited.\n' +
+                'Load factor: \n' +
+                'Clean                                                            +7/-3.75 g\n' +
+                'Empty 230 gallon drop tanks fitted         +5/-3.75 g\n' +
+                'With fuel in 230 gallon drop tanks           +4/-3.75 g\n' +
+                'Negative g is limited to 10 seconds duration only.\n' +
+                '\n' +
+                'C of G to be between 1.0 inches forward of datum and 14.5 inches aft of datum. Datum is marked by a spigot in the main undercarriage bay.\n' +
+                '\n' +
+                'Weights: Maximum take-off 25000 lb\n' +
+                'Normal landing 18500 lb\n' +
+                'Emergency landing weight 23400 lb\n' +
+                '\n' +
+                'Airspeed limitations (see AP101B-1305 and 6-15) summary follows:\n' +
+                'Max speed clean or 100 gall tanks inboard only 620 knots (no Mach limit)\n' +
+                'Max speed, manual controls below 15000 ft 0.75 Mach (0.85M above 15000 ft)\n' +
+                'Undercarriage operation/deployed 250 knots\n' +
+                'Flaps 0° to 38° 300 knots (or 0.9M - lesser)\n' +
+                '>38° and fully down 250 knots\n' +
+                'Max crosswind (dry runway) 25 kts (20 kts wet runway)\n' +
+                ' \n' +
+                'Engine limitations (see AP101B-1305 and 6-15) summary follows:\n' +
+                '\n' +
+                'Rating                         % RPM          JPT(°C)          Duration\n' +
+                'Take-off                      96-97.5           690                  10 mins\n' +
+                'Intermediate              95.5                 655                  30 mins\n' +
+                'Max continuous        92.5                 625                  -\n' +
+                'Ground Idling             35-37              525                  -\n' +
+                'Recommend 4500 rpm minimum on approach.\n' +
+                '\n' +
+                'Day VMC only.\n' +
+                '\n' +
+                'No smoking.\n' +
+                '\n' +
+                'Reliance is not to be placed on the brake parachute when planning a landing. It is not to be streamed before touchdown and the limit speed for streaming is 160 knots.\n' +
+                '\n' +
+                'Fatigue is to be accounted in accordance with section above after each days flight.\n' +
+                '\n' +
+                'Altitude is limited to 10000 ft while the oxygen system is not operational.',
+        },
+    },
 ];
