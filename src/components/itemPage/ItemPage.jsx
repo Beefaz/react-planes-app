@@ -33,7 +33,7 @@ const ItemPage = (props) => {
                fluid/>
         {Object.keys(props.item.CONTENT).map((paragraphItem, index) => (
             <section key={'Section'.concat((index).toString())}>
-                {(paragraphItem !=='Status') && (paragraphItem !=='Video') ? newLinesToComponents('h4', paragraphNameStyle, paragraphItem.replace('_', ' ')) : null}
+                {paragraphItem !=='Status' && paragraphItem !=='Video' ? newLinesToComponents('h4', paragraphNameStyle, paragraphItem.replace('_', ' ')) : null}
                 {paragraphItem !=='Video' ? newLinesToComponents('p', paragraphStyle, props.item.CONTENT[paragraphItem]) : React.createElement(Iframe, iframeParams)}
             </section>
         ),)}
