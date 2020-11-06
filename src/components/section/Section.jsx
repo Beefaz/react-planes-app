@@ -4,7 +4,7 @@ import ContactForm from "../contactForm/ContactForm"
 
 const Section = (props) => {
 
-    return <Jumbotron id={props.id}>
+    return <Jumbotron style={props.style} id={props.id}>
         <h3>{props.sectionName}</h3>
         {props.form&&<ContactForm/>}
     </Jumbotron>

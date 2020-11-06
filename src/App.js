@@ -5,7 +5,7 @@ import MainCarousel from "./components/mainPage/MainCarousel";
 import Section from "./components/section/Section";
 import InventoryCarousel from "./components/mainPage/InventoryCarousel";
 import ItemPage from "./components/itemPage/ItemPage";
-import {ITEMS} from "./constants/PlaneData";
+import {ITEMS} from "./planes/PlaneData";
 
 
 const App = () => {
@@ -36,7 +36,7 @@ const App = () => {
                         </Route>
                     ),)}
                     <Route path='/*'>
-                        <div>ERROR</div>
+                        <Section style={{position: 'relative', top:'48px'}} sectionName={'OOPS, AN ERROR OCCURRED'}/>
                     </Route>
                 </Switch>
                 <Section sectionName={'Contact us'} id='contacts' form={true}/>
