@@ -6,10 +6,14 @@ libraries: react-bootstrap, react-router-dom, react-owl carousel
 
 states, hooks, jsx
 
-item content loaded from src/constants/PlaneData.jsx
 
-to add new item, add item folder to src/planes, top img folder, otherimg folder, fill with images, extend object in PlaneData.jsx (works as local api...).
+Links and navbar items generate automatically from src/constants/Links.jsx
 
-sections are loaded by order in item object.
+Carousel items generate automatically from src/constants/MainCarouselIems.jsx
 
-object composition: state - section without name, video - section with iframe, all other object names will create sections with names as provided object names.
+Everything else from src/planes/ and src/planes/PlaneData.jsx
+
+
+src/planes/PlaneData.jsx object defines the order in which sections are loaded,
+
+object names within CONTENT(in planeData.jsx) defines how sections will be rendered (_video, _list, _table, _unnamed).

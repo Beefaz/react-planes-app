@@ -1,6 +1,6 @@
 const importAll = r => r.keys().map(r);
 /*
-
+Example item to add:
     {
         NAME: '',
         TOPIMAGE: importAll(require.context('../planes//TopIMG', false, /\.(png|jpe?g|svg|webp)$/)),
@@ -10,6 +10,24 @@ const importAll = r => r.keys().map(r);
             History: '',
         },
     },
+
+Named properties: _unnamed, _video, _table, _list
+    {
+        CONTENT:{
+                Object_name_defines_what_will_be_rendered: 'Section will be created, named same as object name,\n'+
+                    'all newlines from here will be added as paragraphs',
+                For_example_unnamed: 'This stuff will be shown as paragraphs in new section,\n'+
+                    'but no section name from object name will be rendered',
+                Another_ex_video: 'write your url here',
+                Another_ex_list: 'Every new line will be rendered as list item into DOM.\n'+
+                    'Section named "Another_ex"',
+                Another_table_ex_unnamed: {
+                    tHead: ['will', 'add', 'table', 'header'],
+                    anything_else: ['will', 'add', 'simple', 'row'],
+                    section: ['will','have', 'no', 'name']
+                },
+        }
+    }
  */
 export const ITEMS = [
     {
@@ -43,10 +61,8 @@ export const ITEMS = [
         TOPIMAGE: importAll(require.context('../planes/Vickers Supermarine Spitfire LF Vb BL688/TopIMG', false, /\.(png|jpe?g|svg|webp)$/)),
         IMAGES: importAll(require.context('../planes/Vickers Supermarine Spitfire LF Vb BL688/OtherIMG', false, /\.(png|jpe?g|svg|webp)$/)),
         CONTENT: {
-            Aircraft_information: 'Vickers Supermarine Spitfire MK Vb LF\n' +
-                'Serial No BL688\n' +
+            Aircraft_information: 'Serial No BL688\n' +
                 'UK CAA Registration - G-CJWO\n' +
-                '\n' +
                 'Airframe: A Zero Timed - Under Restoration\n' +
                 'Engine: Rolls Royce Merlin 35 with Zero Hours & Dowty Rotol three blade propeller',
             History: 'Vickers Supermarine Spitfire LF Vb BL688 - pictured above with the CO of 501 Squadron, Capt Bernard Fuchs, at Hawkinge in the summer of 1943. \n' +
@@ -120,17 +136,19 @@ export const ITEMS = [
         TOPIMAGE: importAll(require.context('../planes/PBY Catalina CC-CDT/TopIMG', false, /\.(png|jpe?g|svg|webp)$/)),
         IMAGES: importAll(require.context('../planes/PBY Catalina CC-CDT/OtherIMG', false, /\.(png|jpe?g|svg|webp)$/)),
         CONTENT: {
+            Annotation_unnamed: 'We are proud to offer to the market this superb PBY Catalina 5A.\n' +
+                'Approximately 3,300 PBY aircraft were built and during World War II, PBYs were used in anti-submarine warfare, patrol bombing, convoy escort, search and rescue missions (especially air-sea rescue), and cargo transport.\n' +
+                'The type operated in nearly all operational theatres of World War II. The Catalina served with distinction and played a prominent and invaluable role in the war against the Japanese.\n' +
+                'These patrol planes shared with land based patrol bombers the combat roles while the very long range Consolidated LB-30 and the Consolidated Coronado were pressed into service to increase the all important logistic strategic air lift capability in the vast Pacific theater. The pairings allowed the Catalina to take on the role of eyes of the fleets at longer ranges than the float plane scouts.\n' +
+                'Several different flying boats were adopted by the Navy, but the PBY was the most widely used and produced.\n' +
+                'Although slow and ungainly, Catalinas distinguished themselves in World War II. Allied forces used them successfully in a wide variety of roles for which the aircraft was never intended. PBYs are remembered for their rescue role, in which they saved the lives of thousands of aircrew downed over water. Catalina airmen called their aircraft the "Cat" on combat missions and "Dumbo" in air-sea rescue service.\n' +
+                'Price: $450,000 US.',
             Aircraft_information: 'Manufacturer: Consolidated (Canadian Vickers)\n' +
                 'Year Built: 1943\n' +
                 'Construction No: CV 332\n' +
                 'Current Reg: CC-CDT\n' +
-                'Previous Reg: \n' +
-                'Last Military Serial no: USAAF 44-34085\n' +
-                '\n' +
-                'Year: 1943\n' +
-                '\n' +
+                'Previous Reg: Last Military Serial no: USAAF 44-34085\n' +
                 'Serial Number: CV-332 \n' +
-                '\n' +
                 'Airframe Hours 7.193\n' +
                 'Engines: Make/Model: PRATT & WHITNEY / R-1830-92\n' +
                 'Serial Number: #1 43-99532 #2 CP304804\n' +
@@ -138,20 +156,7 @@ export const ITEMS = [
                 'Propellers:\n' +
                 'Make/Model: HAMILTON STANDARD / 23E50-505/6477A-0\n' +
                 'Serial Number: #1 - 53134 #2 - 76154\n' +
-                'Hours: #1 = 232  &  #2 = 164\n' +
-                'Price: $450,000 US. \n' +
-                '\n' +
-                'We are proud to offer to the market this superb PBY Catalina 5A.\n' +
-                '\n' +
-                'Approximately 3,300 PBY aircraft were built and during World War II, PBYs were used in anti-submarine warfare, patrol bombing, convoy escort, search and rescue missions (especially air-sea rescue), and cargo transport.\n' +
-                '\n' +
-                'The type operated in nearly all operational theatres of World War II. The Catalina served with distinction and played a prominent and invaluable role in the war against the Japanese.\n' +
-                '\n' +
-                'These patrol planes shared with land based patrol bombers the combat roles while the very long range Consolidated LB-30 and the Consolidated Coronado were pressed into service to increase the all important logistic strategic air lift capability in the vast Pacific theater. The pairings allowed the Catalina to take on the role of eyes of the fleets at longer ranges than the float plane scouts.\n' +
-                '\n' +
-                'Several different flying boats were adopted by the Navy, but the PBY was the most widely used and produced.\n' +
-                '\n' +
-                'Although slow and ungainly, Catalinas distinguished themselves in World War II. Allied forces used them successfully in a wide variety of roles for which the aircraft was never intended. PBYs are remembered for their rescue role, in which they saved the lives of thousands of aircrew downed over water. Catalina airmen called their aircraft the "Cat" on combat missions and "Dumbo" in air-sea rescue service.',
+                'Hours: #1 = 232  &  #2 = 164',
             History: '1944 - Constructed as a PBV-1A by Canadian Vickers.\n' +
                 'Taken on Strength/Charge with the United States Navy with BuNo 67844.\n' +
                 'Not taken up.\n' +
@@ -198,7 +203,7 @@ export const ITEMS = [
         TOPIMAGE: importAll(require.context('../planes/North American Harvard SNJ-3/TopIMG', false, /\.(png|jpe?g|svg|webp)$/)),
         IMAGES: importAll(require.context('../planes/North American Harvard SNJ-3/OtherIMG', false, /\.(png|jpe?g|svg|webp)$/)),
         CONTENT: {
-            Aircraft_information: 'We are pleased to offer for sale this ex South African Air Force Harvard in Central Flying School scheme with code 7637. \n' +
+            Aircraft_information_list: 'We are pleased to offer for sale this ex South African Air Force Harvard in Central Flying School scheme with code 7637. \n' +
                 '\n' +
                 'Registration: ZU-BBF\n' +
                 'C/N 78-7350\n' +
@@ -239,7 +244,7 @@ export const ITEMS = [
             Status: 'SOLD\n' +
                 'We are proud to offer to the market a rare Bentley B.R.2 rotary engine with serial number 101701. It has two PLR Magnetos and an oil pump and in museum quality condition. This engine is presented on an engine stand with a cut away section on one of the cylinders. An internal inspection revealed that two pistons with con rods have been removed.',
             Engine_history: 'The Bentley B.R.2 was a nine-cylinder British rotary aircraft engine developed during the First World War by the motor car engine designer W. O. Bentley from his earlier Bentley BR.1. The BR.2 was built in smaller numbers than the earlier BR.1. Its primary user being by the Royal Air Force in the early 1920s. The initial variant of the BR.2 developed 230, improving to 245 horsepower.',
-            General_characteristics: 'Type: 9-cylinder rotary\n' +
+            General_characteristics_list: 'Type: 9-cylinder rotary\n' +
                 'Bore: 5.51 in (140 mm)\n' +
                 'Stroke: 7.09 in (180 mm)\n' +
                 'Displacement: 1521.8 in (24.94 L)\n' +
@@ -247,13 +252,11 @@ export const ITEMS = [
                 'Components\n' +
                 'Valvetrain: Overhead valve\n' +
                 'Cooling system: Air-cooled\n' +
-                'Performance\n' +
                 'Power output: 250 hp\n' +
                 'Fuel consumption: 20 gallons per hour\n' +
                 'Oil consumption: 16 pints per hour\n' +
-                'Power-to-weight ratio: 0.5 hp/lb\n' +
-                'Major Applications: \n' +
-                'Armstrong Whitworth Armadillo\n' +
+                'Power-to-weight ratio: 0.5 hp/lb',
+            Major_applications_list: 'Armstrong Whitworth Armadillo\n' +
                 'Austin Osprey\n' +
                 'Boulton Paul Bobolink\n' +
                 'Brennan Helicopter\n' +
@@ -298,8 +301,7 @@ export const ITEMS = [
                 'Specific fuel consumption: 9B: 0.564 l/kW/hour(0.74 pt/hp/hour)\n' +
                 'Oil consumption: 9B: 0.0686 l/kW/hour (0.09 pt/hp/hour)\n' +
                 'Power-to-weight ratio: 9B: 0.563 kW/kg (0.341 hp/lb)',
-            Major_applications: 'Major Applications: \n' +
-                'Armstrong Whitworth F.K.10\n' +
+            Major_applications_list: 'Armstrong Whitworth F.K.10\n' +
                 'Avro 504\n' +
                 'Avro 531\n' +
                 'Bristol M.1\n' +
@@ -348,7 +350,7 @@ export const ITEMS = [
         TOPIMAGE: importAll(require.context('../planes/BAC Strikemaster/TopIMG', false, /\.(png|jpe?g|svg|webp)$/)),
         IMAGES: importAll(require.context('../planes/BAC Strikemaster/OtherIMG', false, /\.(png|jpe?g|svg|webp)$/)),
         CONTENT: {
-            Status:'BAC STRIKEMASTER FOR SALE -  2 x MK 88\'s Plus spare engine with logbook,ground equipment and spares for only £130,000 Sterling !\n' +
+            Status: 'BAC STRIKEMASTER FOR SALE -  2 x MK 88\'s Plus spare engine with logbook,ground equipment and spares for only £130,000 Sterling !\n' +
                 '\n' +
                 'This Ex New Zealand Air Force MK88 was retired and imported into Australia in 1994.\n' +
                 'The aircraft underwent a full restoration over a two-year period at which time it was repainted in two-pack to represent the aircraft flown by the Kenyan Air Force.\n' +
@@ -398,14 +400,11 @@ export const ITEMS = [
         TOPIMAGE: importAll(require.context('../planes/DH Tiger Moth/TopIMG', false, /\.(png|jpe?g|svg|webp)$/)),
         IMAGES: importAll(require.context('../planes/DH Tiger Moth/OtherIMG', false, /\.(png|jpe?g|svg|webp)$/)),
         CONTENT: {
-            Status: 'DH82A TIGER MOTH\n' +
-                '\n' +
-                'Serial number - 83478\n' +
+            General_information: 'Serial number - 83478\n' +
                 'Construction number - T7093\n' +
-                'Current Registration: VH-RVE\n' +
-                '\n' +
+                'Current Registration: VH-RVE',
+            Annotation_unnamed:
                 '​A prime opportunity to own a true classic Bi - Plane.\n' +
-                '\n' +
                 'This stunning Tiger Moth is originally a UK manufactured aircraft and  has a total of 341 hours on both airframe and engine since full restoration and full CofA.  \n' +
                 'All AD’s are currently up to-date.\n' +
                 'Due at next inspection are the mandatory instrument AD next 100 hourly.\n' +
@@ -413,7 +412,7 @@ export const ITEMS = [
                 'English built, originally from the UK to NZ then on to Australia.\n' +
                 'Includes Radio, Cloth headset. \n' +
                 'Price Reduced ! : £57,950 Sterling',
-            }
+        }
     },
     {
         NAME: 'De Havilland Dove',
@@ -457,7 +456,7 @@ export const ITEMS = [
         TOPIMAGE: importAll(require.context('../planes/Stinson L-5 Sentinel/TopIMG', false, /\.(png|jpe?g|svg|webp)$/)),
         IMAGES: importAll(require.context('../planes/Stinson L-5 Sentinel/OtherIMG', false, /\.(png|jpe?g|svg|webp)$/)),
         CONTENT: {
-            Status:'Stinson L5 Sentinel 1944 Model \n' +
+            Status: 'Stinson L5 Sentinel 1944 Model \n' +
                 'Asking Price Euros 89,000\n' +
                 '​c/n: 76-1348\n' +
                 'Military serial number 42-99107\n' +
@@ -635,7 +634,7 @@ export const ITEMS = [
                 'Fuel (AVGAS 100LL) : 40 Imp/hr on average\n' +
                 'Oil (100 straight )  : over whole trip 20 Ltrs TOTAL! So less than 1 lit/hour both engines. Both the pilots say this is amazing!\n' +
                 'Range on standard (5) tanks is about 5-6 hours @145-150kt TAS. We made it westbound to the USA in 2017 with about 4 stops comfortably. No ferry kit required',
-            Inventory_of_extras:'4 x beefy chocks\n' +
+            Inventory_of_extras: '4 x beefy chocks\n' +
                 'Hand pump for refuelling from drums\n' +
                 'a new tailwheel tyre, a new mainwheel one (in store in UK) and much newer (than the 3 x DC) single Bose & Sennheiser headsets\n' +
                 'A \'tow-bracket\' for ground-handling (in UK)\n' +
@@ -1063,14 +1062,14 @@ export const ITEMS = [
                 'Port Mainplane            41H-692311    66.915134       111      44.084866\n' +
                 '\n' +
                 'Stbd mainplane           41H-xxxxxx      tbc                    111     ',
-            Engine:'The installed Rolls Royce Avon Mk 12201 engine Serial Number 7392/A654159 was reconditioned by Rolls Royce, East Kilbride on 28th October 1992. It was installed into this aircraft on 14th January 1993 at 7973.55 hours. The reconditioning life is 900 hours with a \'Hot Section\' due at 450 hours, time since overhaul. The time remaining to this \'Hot Section\' is 358.15 hours. The engine is to the latest mod state and has a new LP disc and blades. (see Rolls Royce print-out of Group A parts) Engine cycle usage rate (including ground running carried out in lieu of corrosion inhibiting) is to be accounted in accordance with Rolls Royce Manual viz. 4.0 cycles equivalent to 1 flight hour.\n' +
+            Engine: 'The installed Rolls Royce Avon Mk 12201 engine Serial Number 7392/A654159 was reconditioned by Rolls Royce, East Kilbride on 28th October 1992. It was installed into this aircraft on 14th January 1993 at 7973.55 hours. The reconditioning life is 900 hours with a \'Hot Section\' due at 450 hours, time since overhaul. The time remaining to this \'Hot Section\' is 358.15 hours. The engine is to the latest mod state and has a new LP disc and blades. (see Rolls Royce print-out of Group A parts) Engine cycle usage rate (including ground running carried out in lieu of corrosion inhibiting) is to be accounted in accordance with Rolls Royce Manual viz. 4.0 cycles equivalent to 1 flight hour.\n' +
                 '\n' +
                 'A triple breech cartridge starter is fitted. Fire warning and extinguisher systems are provided and operational. The oil supply system limits negative \'g\' to 10 seconds operation only.',
             Ejection_seats: 'The two Martin-Baker type 4HA(N) Mk 1 seats serial No\'s R76 and R81 have been serviced in accordance with AP109B-0131-12. The parachutes and survival packs have also been serviced in accordance with the relevant Air Publications.',
             Drop_tanks: 'The aircraft is cleared to carry 2 x 230 gallon drop tanks on the inboard pylons only provided no more than 4 g was applied with fuel in the tanks or 5 g with tanks empty.',
             Weight_and_balance: 'The aircrafts weight is 13,347 lbs. The CG is at 0.45 in aft.',
             Electrical_system: 'In the event of generator failure, a dolls eye provides warning that battery power is being consumed. A load analysis confirms that battery duration is adequate for 30 mins flight (in accordance with Airworthiness Notice 88) in this event and load shedding procedures are contained in the applicants supplement to the Aircrew Manual.',
-            Radio:'The following military radio equipment has been retained:\n' +
+            Radio: 'The following military radio equipment has been retained:\n' +
                 '\n' +
                 'No off              Function          Manufacturer             Type              \n' +
                 '\n' +
