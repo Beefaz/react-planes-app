@@ -35,7 +35,7 @@ export const ITEMS = [
         TOPIMAGE: importAll(require.context('../planes/Vickers Supermarine Seafire III/TopIMG', false, /\.(png|jpe?g|svg|webp)$/)),
         IMAGES: importAll(require.context('../planes/Vickers Supermarine Seafire III/OtherIMG', false, /\.(png|jpe?g|svg|webp)$/)),
         CONTENT: {
-            Aircraft_information: 'Airframe: A highly original aircraft with only 42,25 hours\n' +
+            General_information: 'Airframe: A highly original aircraft with only 42,25 hours\n' +
                 'Engine: Rolls Royce Merlin 45 with 47,25 Hours & Dowty Rotol four blade propeller. Inspected and passed on 25/06/2019',
             History: 'Built under contract by Westland Aircraft Ltd at Yeovil, Somerset as a Seaﬁre LF.IIIC serial PP972 was ready for collection on the 27th September 1944. It was then issued to the Royal Naval Deposit Account (RNDA) on the 28th September awaiting collection for the Fleet Air Arm (FAA).\n' +
                 'PP972 is then known to have served with 809 (Naval) Squadron from November 1944 who at the time were converting from the Seaﬁre L.II. 809 Squadron were destined too see service in the Far East and the squadron embarked onto the aircraft carrier HMS Stalker at Plymouth, Devon on the 29th November bound for Gibraltar and then Egypt, the Seaﬁres then ﬂew off onto HMS Attacker on leaving Plymouth as Stalker was due for a reﬁ t at Gibraltar. The carrier arrived at Dekhelia, Egypt and the Seaﬁres disembarked, later they would be reunited with Stalker before setting sail to the Far East in March 1945 as part of the 21st Aircraft Carrier Squadron ﬂeet.\n' +

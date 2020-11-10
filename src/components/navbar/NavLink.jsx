@@ -4,6 +4,8 @@ import {Nav} from "react-bootstrap";
 
 const NavLink = (props) => {
     return <Nav.Link
+
+        className='text-light'
         as={Link}
         to={'/'}
         href={props.item.href}

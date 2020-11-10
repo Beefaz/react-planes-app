@@ -13,6 +13,7 @@ const InventoryCarousel = (props) => {
         animationDuration: 1000,
         mouseTracking: true,
         disableDotsControls: true,
+        disableButtonsControls: true,
         dots: false,
         infinite: true,
     };
@@ -37,21 +38,21 @@ const InventoryCarousel = (props) => {
         textAlign: 'center'
     };
     const handleDragStart = (e) => e.preventDefault();
-
     const cards = props.items.map(
         (item, index) => (
             <Card key={'card'.concat(index.toString())}
                   style={imageContainerStyle}
-                  as={Link}
-                  id={'item'.concat(index.toString())}
-                  to={"/item/" + item.NAME.replace(/\s/g, "")}
                   onDragStart={handleDragStart}>
                 <Card.Img
                     style={imageStyle}
                     variant="top"
                     src={item.TOPIMAGE[0].default}
                     alt="First slide"/>
-                <Card.Body className='bg bg-secondary'>
+                <Card.Body className='text-light bg-dark'
+
+                           as={Link}
+                           id={'item'.concat(index.toString())}
+                           to={"/item/" + item.NAME.replace(/\s/g, "")}>
                     <Card.Text style={cardLabelStyle}>{item.NAME.toUpperCase()}</Card.Text>
                 </Card.Body>
             </Card>

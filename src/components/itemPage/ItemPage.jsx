@@ -53,7 +53,7 @@ const ItemPage = (props) => {
     </table>;
 
 
-    return <Jumbotron id='itemPage' onLoad={scrollToTop}>
+    return <Jumbotron id='itemPage' onLoad={scrollToTop} style={{paddingTop:'56px'}}>
         <h1>{props.item.NAME}</h1>
         <div>
             <Image src={props.item.TOPIMAGE[0].default}

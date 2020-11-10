@@ -1,22 +1,16 @@
-import React, {useState} from "react";
+import React from "react";
 import {Button, Carousel} from "react-bootstrap";
-import {useMediaPredicate} from "react-media-hook";
 import {CAROUSEL_ITEMS} from '../../constants/MainCarouselItems';
 
 const MainCarousel = (props) => {
-    const btnOnHover = {
-        opacity: '100%',
-        borderColor: '#000'
+    const carouselParams = {
+        interval:3000,
+        fade: true,
+        id:props.id,
+        style: {
+            paddingTop: '56px',
+        },
     };
-    const btnOnHoverOut = {
-        opacity: '90%',
-        borderColor: '#f8f9fa'
-    };
-
-    const screenSM = useMediaPredicate("(min-width: 300px)");
-    const screenMD = useMediaPredicate("(min-width: 454px)");
-    const [btnStyle, setBtnStyle] = useState(btnOnHoverOut);
-
     const shadeLayerStyle = {
         position: 'absolute',
         height: '100%',
@@ -33,25 +27,27 @@ const MainCarousel = (props) => {
         overflow: 'hidden'
     };
     const captionStyle = {
-        position: 'absolute',
-        top: screenMD ? '50%' : (screenSM ? '37%' : '25%'),
-        transform: screenMD ? 'translate(0,-50%)' : (screenSM ? 'translate(0,-37%)' : 'translate(0,-25%)'),
+        height: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems:'center',
     };
+    const captionHeaderStyle = {
+        flexGrow: '1',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        textShadow: '0 0 10px #000',
+    };
+
     const linkStyle = {
-        borderWidth: 'medium',
-        color: '#000',
-        backgroundColor: '#000',
+        borderStyle:'none',
+        marginBottom: '15px',
+        maxWidth: '200px',
         fontWeight: '900',
-        borderColor: 'gray',
         padding: '15px',
-        position: 'absolute',
-        bottom: '5%',
-        left: '50%',
-        marginRight: '-50%',
-        transform: 'translate(-50%, -50%)',
-        ...btnStyle,
     };
-    return <Carousel interval={4000} id={props.id} style={{paddingTop: '56px'}}>
+    return <Carousel {...carouselParams}>
         {CAROUSEL_ITEMS.map((item, index) => (
             <Carousel.Item style={imgContainerStyle} key={'carouselItem'.concat(index.toString())}>
                 <div style={shadeLayerStyle}/>
@@ -61,21 +57,17 @@ const MainCarousel = (props) => {
                     src={item.image}
                     alt="First slide"/>
                 <Carousel.Caption style={captionStyle}>
-                    <h1>{item.h1}</h1>
-                    <h3>{item.h3}</h3>
-                    <p>{item.p}</p>
+                    <div style={captionHeaderStyle}>
+                        <h1>{item.h1}</h1>
+                        <h2>{item.h3}</h2>
+                        <h3>{item.p}</h3>
+                    </div>
+                    <Button className='text-light bg-dark'
+                            href={item.href}
+                            style={linkStyle}>
+                        {item.btnText}
+                    </Button>
                 </Carousel.Caption>
-                <Button className='bg bg-light'
-                        href={item.href}
-                        style={linkStyle}
-                        onMouseEnter={() => {
-                            setBtnStyle(btnOnHover)
-                        }}
-                        onMouseLeave={() => {
-                            setBtnStyle(btnOnHoverOut)
-                        }}>
-                    {item.btnText}
-                </Button>
             </Carousel.Item>
         ),)}
     </Carousel>

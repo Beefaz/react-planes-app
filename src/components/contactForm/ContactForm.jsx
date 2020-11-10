@@ -18,7 +18,7 @@ const SectionContent = () =>{
             <Form.Group controlId="exampleForm.ControlTextarea1">
                 <Form.Control as="textarea" placeholder="Message" name="message" rows={3}/>
             </Form.Group>
-            <Button variant="primary" type="submit">
+            <Button className='text-light bg-dark' type="submit" style={{borderStyle:'none'}}>
                 Submit
             </Button>
         </Form>

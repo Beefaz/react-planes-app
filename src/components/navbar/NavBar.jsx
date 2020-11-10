@@ -15,7 +15,7 @@ const NavBar = (props) => {
                       onClick={scrollToTop}>Historic and Classic</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
         <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="mr-auto">
+            <Nav className="mr-autot">
                 {LINKS.map((item, index) => (
                     <NavLink {...props}
                              item={item}
