@@ -26,7 +26,6 @@ const App = () => {
                         <Section sectionName={'Services'} id='services'/>
                         <InventoryCarousel id='inventory'
                                            items={ITEMS}
-                                           cardSize={300}
                         />
                     </Route>
                     {ITEMS.map((item, index) => (
@@ -36,7 +35,7 @@ const App = () => {
                         </Route>
                     ),)}
                     <Route path='/*'>
-                        <Section style={{position: 'relative', top:'48px'}} sectionName={'OOPS, AN ERROR OCCURRED'}/>
+                        <Section style={{position: 'relative', top:'48px'}} sectionName={'OOPS, AN ERROR OCCURRED, TRY LINKS ABOVE'}/>
                     </Route>
                 </Switch>
                 <Section sectionName={'Contact us'} id='contacts' form={true}/>

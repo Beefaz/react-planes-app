@@ -1,16 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Jumbotron, Card} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 
 const InventoryCarousel = (props) => {
+    const [cardSize, setCardSize] = useState(300);
 
     const carouselParams = {
         autoWidth: true,
         autoPlay: true,
         autoPlayInterval: 2500,
-        animationDuration: 1000,
+        animationDuration: 500,
         mouseTracking: true,
         disableDotsControls: true,
         disableButtonsControls: true,
@@ -18,8 +19,8 @@ const InventoryCarousel = (props) => {
         infinite: true,
     };
     const imageContainerStyle = {
-        height: props.cardSize,
-        width: props.cardSize,
+        height: cardSize-32,
+        width: cardSize-32,
         overflow: 'hidden',
         borderRadius: '25px',
         textDecoration: 'none',
@@ -38,6 +39,12 @@ const InventoryCarousel = (props) => {
         textAlign: 'center'
     };
     const handleDragStart = (e) => e.preventDefault();
+    const resizeItems = () => {
+        if (window.screen.width <= 350) {
+            setCardSize(window.screen.width);
+        }
+    };
+
     const cards = props.items.map(
         (item, index) => (
             <Card key={'card'.concat(index.toString())}
@@ -60,7 +67,7 @@ const InventoryCarousel = (props) => {
     );
     return <Jumbotron id={props.id}>
         <h3>Inventory</h3>
-        <AliceCarousel {...carouselParams} items={cards}/>
+        <AliceCarousel {...carouselParams} items={cards} onLoad={resizeItems} onResized={resizeItems}/>
     </Jumbotron>
 };
 

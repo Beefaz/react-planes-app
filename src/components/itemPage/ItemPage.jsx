@@ -1,11 +1,41 @@
 import React from 'react';
-import {Image, Jumbotron} from "react-bootstrap";
+import {Image, Jumbotron, Row, Col} from "react-bootstrap";
 import ImageGrid from "./ImageGrid";
 import Iframe from 'react-iframe';
 import {scrollToTop} from "../../constants/Constants";
 
 
 const ItemPage = (props) => {
+    const topSectionStyle = {
+        justifyContent: 'center',
+        paddingTop: '15px',
+        margin: '-9px',
+        marginBottom: '10px',
+    };
+    const topSectionCol1Style = {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '10px',
+    };
+    const topSectionCol2Style = {
+        ...topSectionCol1Style,
+        flexDirection: 'column',
+    };
+    const topImgStyle = {
+        maxHeight: '80vh',
+        objectFit: 'cover',
+    };
+    const topSectionTextColStyle = {
+        textAlign: 'justify',
+        textJustify: 'inter-word',
+        paddingTop: '15px',
+    };
+    const alternateH3Style = {
+        display: 'flex',
+        justifyContent: 'center'
+    };
+
     const paragraphNameStyle = {};
     const paragraphStyle = {};
     const tableStyle = {};
@@ -14,7 +44,7 @@ const ItemPage = (props) => {
     const ulStyle = {};
     const liStyle = {};
 
-    let iframeParams = {
+    const iframeParams = {
         width: "100%",
         height: "415",
         frameBorder: "0",
@@ -53,46 +83,53 @@ const ItemPage = (props) => {
     </table>;
 
 
-    return <Jumbotron id='itemPage' onLoad={scrollToTop} style={{paddingTop:'56px'}}>
-        <h1>{props.item.NAME}</h1>
-        <div>
-            <Image src={props.item.TOPIMAGE[0].default}
-                   alt=""
-                   fluid/>
+    return <Jumbotron id='itemPage' onLoad={scrollToTop} style={{paddingTop: '56px'}}>
+        <Row style={topSectionStyle}>
+            <Col sm={12} lg={8} xl={6} style={topSectionCol1Style}>
+                <Image style={topImgStyle}
+                       src={props.item.TOPIMAGE[0].default}
+                       alt=""
+                       fluid/>
+            </Col>
             {props.item.CONTENT.hasOwnProperty('General_information')
-                ? <div><h4 style={paragraphNameStyle}>General
-                    info:</h4>{createElemFromNewLine('p', paragraphStyle, props.item.CONTENT.General_information)}</div>
-                : null}
-        </div>
+            && <Col lg={4} xl={6} style={topSectionCol2Style}>
+                <h3>{props.item.NAME}</h3>
+                <div style={topSectionTextColStyle}>
+                    {createElemFromNewLine('p', paragraphStyle, props.item.CONTENT.General_information)}
+                </div>
+            </Col>}
+        </Row>
+        {!props.item.CONTENT.hasOwnProperty('General_information')
+        && <div style={alternateH3Style}><h3>{props.item.NAME}</h3></div>}
         {Object.keys(props.item.CONTENT).map((sectionContent, index) => (
             <section key={'Section'.concat((index).toString())}>
                 {!objIncludesStr(sectionContent, 'unnamed')
-                    ? (objIncludesStr(sectionContent, 'list')
-                        || objIncludesStr(sectionContent, 'table'))
-                        ? <h4 style={paragraphNameStyle}>{sectionContent.toString()
-                            .replace(/[_]+unnamed/gi, '')
-                            .replace(/[_]+list/gi, '')
-                            .replace(/[_]+table/gi, '')
-                            .replace(/[_]/, ' ')}</h4>
-                        : <h4 style={paragraphNameStyle}>{sectionContent.toString()
-                            .replace(/[_]/, ' ')}</h4>
-                    : null
+                && ((objIncludesStr(sectionContent, 'list')
+                    || objIncludesStr(sectionContent, 'table'))
+                    ? (<h4 style={paragraphNameStyle}>{sectionContent.toString()
+                        .replaceAll(/[_]+unnamed/gi, '')
+                        .replaceAll(/[_]+list/gi, '')
+                        .replaceAll(/[_]+table/gi, '')
+                        .replaceAll(/[_]/gi, ' ')}</h4>)
+                    : (!objIncludesStr(sectionContent, 'general_information')
+                        && <h4 style={paragraphNameStyle}>{sectionContent.toString()
+                            .replaceAll(/[_]/gi, ' ')}</h4>))
                 }
+
                 {objIncludesStr(sectionContent, 'video')
-                    ? <Iframe {...iframeParams} url={props.item.CONTENT[sectionContent]}/>
-                    : null}
+                && <Iframe {...iframeParams} url={props.item.CONTENT[sectionContent]}/>}
+
                 {objIncludesStr(sectionContent, 'list')
-                    ?
-                    <ul style={ulStyle}>{createElemFromNewLine('li', liStyle, props.item.CONTENT[sectionContent])}</ul>
-                    : null}
+                && <ul style={ulStyle}>{createElemFromNewLine('li', liStyle, props.item.CONTENT[sectionContent])}</ul>}
+
                 {objIncludesStr(sectionContent, 'table')
-                    ? createTable(props.item.CONTENT[sectionContent], tableStyle, headerRowStyle, rowStyle)
-                    : null}
+                && createTable(props.item.CONTENT[sectionContent], tableStyle, headerRowStyle, rowStyle)}
+
                 {!objIncludesStr(sectionContent, 'list')
                 && !objIncludesStr(sectionContent, 'video')
                 && !objIncludesStr(sectionContent, 'table')
-                    ? createElemFromNewLine('p', paragraphStyle, props.item.CONTENT[sectionContent])
-                    : null}
+                && !objIncludesStr(sectionContent, 'general_information')
+                && createElemFromNewLine('p', paragraphStyle, props.item.CONTENT[sectionContent])}
             </section>
         ),)}
         <ImageGrid item={props.item} id={'Plane gallery'}/>
